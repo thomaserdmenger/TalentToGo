@@ -9,7 +9,6 @@ import { FaSquareWhatsapp } from "react-icons/fa6"
 export default function Hero({ data, navigation }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { pathname } = useLocation()
-  console.log(pathname)
 
   return (
     <div className="bg-white">
@@ -125,7 +124,7 @@ export default function Hero({ data, navigation }) {
             }}
           />
         </div>
-        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             {/* <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next round of funding.{" "}

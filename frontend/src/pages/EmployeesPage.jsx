@@ -1,5 +1,15 @@
+import Hero from "../components/Hero"
+import { employeesData } from "../data/employeesData.js"
+import { navigation } from "../data/navigation.js"
+
 const EmployeesPage = () => {
-  return <div>EmployeesPage</div>
+  return (
+    <>
+      <header>
+        <Hero data={employeesData} navigation={navigation} />
+      </header>
+    </>
+  )
 }
 
 export default EmployeesPage
