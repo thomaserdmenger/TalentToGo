@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { Dialog } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { FaSquareFacebook } from "react-icons/fa6"
@@ -8,6 +8,8 @@ import { FaSquareWhatsapp } from "react-icons/fa6"
 
 export default function Hero({ data, navigation }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { pathname } = useLocation()
+  console.log(pathname)
 
   return (
     <div className="bg-white">
@@ -138,18 +140,20 @@ export default function Hero({ data, navigation }) {
               {data.heading}
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">{data.text}</p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link
-                to="/employer"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                Für Arbeitgeber
-              </Link>
-              <Link
-                to="/employees"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                Für Arbeitnehmer
-              </Link>
-            </div>
+            {pathname === "/" && (
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <Link
+                  to="/employer"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                  Für Arbeitgeber
+                </Link>
+                <Link
+                  to="/employees"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                  Für Arbeitnehmer
+                </Link>
+              </div>
+            )}
           </div>
         </div>
         <div

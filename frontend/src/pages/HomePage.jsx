@@ -4,9 +4,11 @@ import { navigation } from "../data/navigation.js"
 
 const HomePage = () => {
   return (
-    <header>
-      <Hero data={homeData} navigation={navigation} />
-    </header>
+    <>
+      <header>
+        <Hero data={homeData} navigation={navigation} />
+      </header>
+    </>
   )
 }
 
