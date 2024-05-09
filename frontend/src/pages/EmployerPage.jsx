@@ -1,12 +1,18 @@
 import Hero from "../components/Hero"
 import { employerData } from "../data/employerData.js"
-import { navigationDE } from "../data/navigation.js"
+import { homeDataHeroDE, homeDataHeroUS } from "../data/homeData.js"
+import { navigationDE, navigationUS } from "../data/navigation.js"
 
 const EmployerPage = () => {
   return (
     <>
       <header>
-        <Hero data={employerData} navigationDE={navigationDE} />
+        <Hero
+          homeDataHeroDE={homeDataHeroDE}
+          homeDataHeroUS={homeDataHeroUS}
+          navigationDE={navigationDE}
+          navigationUS={navigationUS}
+        />
       </header>
     </>
   )
