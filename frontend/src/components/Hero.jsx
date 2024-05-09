@@ -15,6 +15,8 @@ export default function Hero({
   navigationUS,
   employerDataDE,
   employerDataUS,
+  employeesDataDE,
+  employeesDataUS,
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { pathname } = useLocation()
@@ -164,10 +166,12 @@ export default function Hero({
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 {pathname === "/" && homeDataHeroDE.heading}
                 {pathname === "/employer" && employerDataDE.heading}
+                {pathname === "/employees" && employeesDataDE.heading}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 {pathname === "/" && homeDataHeroDE.text}
                 {pathname === "/employer" && employerDataDE.text}
+                {pathname === "/employees" && employeesDataDE.text}
               </p>
               {pathname === "/" && (
                 <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -193,10 +197,12 @@ export default function Hero({
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 {pathname === "/" && homeDataHeroUS.heading}
                 {pathname === "/employer" && employerDataUS.heading}
+                {pathname === "/employees" && employeesDataUS.heading}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 {pathname === "/" && homeDataHeroUS.text}
                 {pathname === "/employer" && employerDataUS.text}
+                {pathname === "/employees" && employeesDataUS.text}
               </p>
               {pathname === "/" && (
                 <div className="mt-10 flex items-center justify-center gap-x-6">
