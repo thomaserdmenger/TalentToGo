@@ -1,12 +1,12 @@
 import Hero from "../components/Hero"
 import { employerData } from "../data/employerData.js"
-import { navigation } from "../data/navigation.js"
+import { navigationDE } from "../data/navigation.js"
 
 const EmployerPage = () => {
   return (
     <>
       <header>
-        <Hero data={employerData} navigation={navigation} />
+        <Hero data={employerData} navigationDE={navigationDE} />
       </header>
     </>
   )
