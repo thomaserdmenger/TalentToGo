@@ -1,12 +1,17 @@
 import Hero from "../components/Hero"
-import { homeData } from "../data/homeData.js"
-import { navigation } from "../data/navigation.js"
+import { homeDataHeroDE, homeDataHeroUS } from "../data/homeData.js"
+import { navigationDE, navigationUS } from "../data/navigation.js"
 
 const HomePage = () => {
   return (
     <>
       <header>
-        <Hero data={homeData} navigation={navigation} />
+        <Hero
+          homeDataHeroDE={homeDataHeroDE}
+          homeDataHeroUS={homeDataHeroUS}
+          navigationDE={navigationDE}
+          navigationUS={navigationUS}
+        />
       </header>
     </>
   )
