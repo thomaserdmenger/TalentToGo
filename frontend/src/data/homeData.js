@@ -104,3 +104,49 @@ export const homeDataServiceUS = {
     },
   ],
 }
+
+export const aboutUsDE = {
+  heading: "Unser Team",
+  text: "Wir sind eine dynamische Gruppe von Menschen, die mit Leidenschaft bei der Sache sind und sich dafür einsetzen, die besten Ergebnisse für unsere Kunden zu erzielen.",
+  people: [
+    {
+      fullname: "Katharina Wenzel",
+      role: "Rolle von Katharina",
+      imageUrl:
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      xUrl: "#",
+      linkedinUrl: "#",
+    },
+    {
+      fullname: "Katharinas Mitstreiterin",
+      role: "Rolle von Mitstreiterin",
+      imageUrl:
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      xUrl: "#",
+      linkedinUrl: "#",
+    },
+  ],
+}
+
+export const aboutUsUS = {
+  heading: "Our Team",
+  text: "We are a dynamic group of people who are passionate about what we do and committed to achieving the best results for our customers.",
+  people: [
+    {
+      fullname: "Katharina Wenzel",
+      role: "Katharina role",
+      imageUrl:
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      xUrl: "#",
+      linkedinUrl: "#",
+    },
+    {
+      fullname: "Katharinas friends",
+      role: "Friends role",
+      imageUrl:
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      xUrl: "#",
+      linkedinUrl: "#",
+    },
+  ],
+}
