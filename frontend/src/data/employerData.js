@@ -93,3 +93,65 @@ export const employerPlacementUS = {
   heading: "The process of recruiting specialists",
   text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
 }
+
+export const employerFaqDE = {
+  faqs: [
+    {
+      question: "Was ist das Beste an der Schweiz?",
+      answer:
+        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "Was ist das Beste an der Schweiz?",
+      answer:
+        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "Was ist das Beste an der Schweiz?",
+      answer:
+        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "Was ist das Beste an der Schweiz?",
+      answer:
+        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "Was ist das Beste an der Schweiz?",
+      answer:
+        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+  ],
+  heading: "Häufig gestelle Fragen",
+}
+
+export const employerFaqUS = {
+  faqs: [
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+  ],
+  heading: "Frequently asked questions",
+}
