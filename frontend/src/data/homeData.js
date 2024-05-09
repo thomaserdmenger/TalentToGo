@@ -1,3 +1,10 @@
+import {
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+} from "@heroicons/react/24/outline"
+
 export const homeDataHeroDE = {
   heading: "TalentToGo: Ihre Experten für hochqualifizierte Fachkräfte aus Mexiko",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
@@ -32,4 +39,68 @@ export const homeDataProcessUS = {
     "The 20L model has enough space for 370 candy bars, 6 cylinders of chips, 1220 standard gumballs, or any combination of on-the-go treats that your heart desires. Yes, we did the math.",
   textImgTwo:
     "Up your snack organization game with multiple compartment options. The quick-access stash pouch is ready for even the most unexpected snack attacks and sharing needs.",
+}
+
+export const homeDataServiceDE = {
+  slogan: "Slogan oder Call to action",
+  heading: "Alles, was Sie für die Bereitstellung Ihrer Anwendung benötigen",
+  text: "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+  features: [
+    {
+      name: "Service 1",
+      description:
+        "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+      icon: CloudArrowUpIcon,
+    },
+    {
+      name: "Service 2",
+      description:
+        "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+      icon: LockClosedIcon,
+    },
+    {
+      name: "Service 3",
+      description:
+        "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+      icon: ArrowPathIcon,
+    },
+    {
+      name: "Service 4",
+      description:
+        "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+      icon: FingerPrintIcon,
+    },
+  ],
+}
+
+export const homeDataServiceUS = {
+  slogan: "Slogan or Call to action",
+  heading: "Everything you need to deploy your app",
+  text: "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+  features: [
+    {
+      name: "Service 1",
+      description:
+        "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+      icon: CloudArrowUpIcon,
+    },
+    {
+      name: "Service 2",
+      description:
+        "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+      icon: LockClosedIcon,
+    },
+    {
+      name: "Service 3",
+      description:
+        "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+      icon: ArrowPathIcon,
+    },
+    {
+      name: "Service 4",
+      description:
+        "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+      icon: FingerPrintIcon,
+    },
+  ],
 }
