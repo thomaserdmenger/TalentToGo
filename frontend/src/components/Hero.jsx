@@ -8,7 +8,14 @@ import { FaSquareFacebook } from "react-icons/fa6"
 import { FaSquareInstagram } from "react-icons/fa6"
 import { FaSquareWhatsapp } from "react-icons/fa6"
 
-export default function Hero({ homeDataHeroDE, homeDataHeroUS, navigationDE, navigationUS }) {
+export default function Hero({
+  homeDataHeroDE,
+  homeDataHeroUS,
+  navigationDE,
+  navigationUS,
+  employerDataDE,
+  employerDataUS,
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { pathname } = useLocation()
   const { language } = useContext(languageContext)
@@ -155,9 +162,13 @@ export default function Hero({ homeDataHeroDE, homeDataHeroUS, navigationDE, nav
           <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                {homeDataHeroDE.heading}
+                {pathname === "/" && homeDataHeroDE.heading}
+                {pathname === "/employer" && employerDataDE.heading}
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">{homeDataHeroDE.text}</p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                {pathname === "/" && homeDataHeroDE.text}
+                {pathname === "/employer" && employerDataDE.text}
+              </p>
               {pathname === "/" && (
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
@@ -180,9 +191,13 @@ export default function Hero({ homeDataHeroDE, homeDataHeroUS, navigationDE, nav
           <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                {homeDataHeroUS.heading}
+                {pathname === "/" && homeDataHeroUS.heading}
+                {pathname === "/employer" && employerDataUS.heading}
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">{homeDataHeroUS.text}</p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                {pathname === "/" && homeDataHeroUS.text}
+                {pathname === "/employer" && employerDataUS.text}
+              </p>
               {pathname === "/" && (
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link

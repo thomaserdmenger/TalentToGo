@@ -1,4 +1,8 @@
+import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { languageContext } from "../Context/Context.jsx"
 import Hero from "../components/Hero"
+import Footer from "../components/Footer.jsx"
 import { homeDataHeroDE, homeDataHeroUS } from "../data/homeData.js"
 import { navigationDE, navigationUS } from "../data/navigation.js"
 import {
@@ -9,10 +13,6 @@ import {
   aboutUsDE,
   aboutUsUS,
 } from "../data/homeData.js"
-import { Link } from "react-router-dom"
-import { useContext } from "react"
-import { languageContext } from "../Context/Context.jsx"
-import Footer from "../components/Footer.jsx"
 
 const HomePage = () => {
   const { language } = useContext(languageContext)
