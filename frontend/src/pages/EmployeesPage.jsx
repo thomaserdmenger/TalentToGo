@@ -1,3 +1,4 @@
+import Footer from "../components/Footer.jsx"
 import Hero from "../components/Hero"
 import { employeesData } from "../data/employeesData.js"
 import { homeDataHeroDE, homeDataHeroUS } from "../data/homeData.js"
@@ -14,6 +15,8 @@ const EmployeesPage = () => {
           navigationUS={navigationUS}
         />
       </header>
+      <main></main>
+      <Footer />
     </>
   )
 }
