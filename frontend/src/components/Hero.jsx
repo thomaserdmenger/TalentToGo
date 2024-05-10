@@ -1,5 +1,5 @@
 import { useContext, useState } from "react"
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { languageContext } from "../Context/Context"
 import LanguageSelect from "./LanguageSelect"
 import { Dialog } from "@headlessui/react"
@@ -19,8 +19,68 @@ export default function Hero({
   employeesDataUS,
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { pathname } = useLocation()
   const { language } = useContext(languageContext)
+  const { pathname } = useLocation()
+  const navigate = useNavigate()
+
+  const scrollToAboutUs = (e) => {
+    // console.log(e.target.textContent)
+    // console.log(pathname)
+
+    if (e.target.textContent === "Über uns" && pathname === "/") {
+      const aboutUsSection = document.querySelector("#aboutUs")
+      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+    }
+
+    if (e.target.textContent === "About us" && pathname === "/") {
+      const aboutUsSection = document.querySelector("#aboutUs")
+      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+    }
+
+    if (pathname === "/employer" && e.target.textContent === "Über uns") {
+      setTimeout(() => {
+        navigate("/")
+        setTimeout(() => {
+          const aboutUsSection = document.querySelector("#aboutUs")
+          console.log(aboutUsSection)
+          aboutUsSection.scrollIntoView({ behavior: "smooth" })
+        }, 20)
+      }, 50)
+    }
+
+    if (pathname === "/employer" && e.target.textContent === "About us") {
+      setTimeout(() => {
+        navigate("/")
+        setTimeout(() => {
+          const aboutUsSection = document.querySelector("#aboutUs")
+          console.log(aboutUsSection)
+          aboutUsSection.scrollIntoView({ behavior: "smooth" })
+        }, 20)
+      }, 50)
+    }
+
+    if (pathname === "/employees" && e.target.textContent === "Über uns") {
+      setTimeout(() => {
+        navigate("/")
+        setTimeout(() => {
+          const aboutUsSection = document.querySelector("#aboutUs")
+          console.log(aboutUsSection)
+          aboutUsSection.scrollIntoView({ behavior: "smooth" })
+        }, 20)
+      }, 50)
+    }
+
+    if (pathname === "/employees" && e.target.textContent === "About us") {
+      setTimeout(() => {
+        navigate("/")
+        setTimeout(() => {
+          const aboutUsSection = document.querySelector("#aboutUs")
+          console.log(aboutUsSection)
+          aboutUsSection.scrollIntoView({ behavior: "smooth" })
+        }, 20)
+      }, 50)
+    }
+  }
 
   return (
     <div className="bg-white">
@@ -49,6 +109,7 @@ export default function Hero({
             {language === "DE" &&
               navigationDE.map((item) => (
                 <Link
+                  onClick={scrollToAboutUs}
                   key={item.name}
                   to={item.href}
                   className="text-sm font-semibold leading-6 text-gray-900">
@@ -58,6 +119,7 @@ export default function Hero({
             {language === "US" &&
               navigationUS.map((item) => (
                 <Link
+                  onClick={scrollToAboutUs}
                   key={item.name}
                   to={item.href}
                   className="text-sm font-semibold leading-6 text-gray-900">
