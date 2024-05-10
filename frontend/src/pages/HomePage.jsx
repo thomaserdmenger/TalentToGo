@@ -209,7 +209,7 @@ const HomePage = () => {
           </div>
         </section>
         {/* ABOUT US SECTION */}
-        <section className="aboutUsSection">
+        <section id="aboutUs" className="aboutUsSection">
           <div className="bg-white py-24 sm:py-32">
             {language === "DE" && (
               <>

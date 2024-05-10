@@ -22,6 +22,12 @@ export default function Hero({
   const { pathname } = useLocation()
   const { language } = useContext(languageContext)
 
+  const scrollToAboutUs = (e) => {
+    if (e.target.textContent !== "Über uns" || pathname !== "/") return
+    const aboutUsSection = document.querySelector("#aboutUs")
+    aboutUsSection.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -49,6 +55,7 @@ export default function Hero({
             {language === "DE" &&
               navigationDE.map((item) => (
                 <Link
+                  onClick={scrollToAboutUs}
                   key={item.name}
                   to={item.href}
                   className="text-sm font-semibold leading-6 text-gray-900">
