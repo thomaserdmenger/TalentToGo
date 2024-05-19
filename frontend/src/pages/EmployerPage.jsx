@@ -14,6 +14,7 @@ import {
   employerFaqDE,
   employerFaqES,
 } from "../data/employerData.js"
+import ContactForm from "../components/ContactForm.jsx"
 
 const EmployerPage = () => {
   const { language } = useContext(languageContext)
@@ -172,6 +173,10 @@ const EmployerPage = () => {
               </div>
             </div>
           </div>
+        </section>
+        {/* CONTACT FORM SECTION */}
+        <section id="contactEmployers" className="contactFormSection">
+          <ContactForm />
         </section>
       </main>
       <Footer />

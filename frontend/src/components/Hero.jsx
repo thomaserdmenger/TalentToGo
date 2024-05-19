@@ -23,7 +23,8 @@ export default function Hero({
   const { pathname } = useLocation()
   const navigate = useNavigate()
 
-  const scrollToAboutUs = (e) => {
+  const scrollToDifferentSections = (e) => {
+    // Conditionals for About Us
     if (e.target.textContent === "Über uns" && pathname === "/") {
       const aboutUsSection = document.querySelector("#aboutUs")
       aboutUsSection.scrollIntoView({ behavior: "smooth" })
@@ -73,6 +74,37 @@ export default function Hero({
         }, 20)
       }, 50)
     }
+
+    // Conditionals for Contact Sections
+    if (e.target.textContent === "Kontakt" && pathname === "/") {
+      const aboutUsSection = document.querySelector("#contactHome")
+      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+    }
+
+    if (e.target.textContent === "Contacto" && pathname === "/") {
+      const aboutUsSection = document.querySelector("#contactHome")
+      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+    }
+
+    if (e.target.textContent === "Kontakt" && pathname === "/employer") {
+      const aboutUsSection = document.querySelector("#contactEmployers")
+      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+    }
+
+    if (e.target.textContent === "Contacto" && pathname === "/employer") {
+      const aboutUsSection = document.querySelector("#contactEmployers")
+      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+    }
+
+    if (e.target.textContent === "Kontakt" && pathname === "/employees") {
+      const aboutUsSection = document.querySelector("#contactEmployees")
+      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+    }
+
+    if (e.target.textContent === "Contacto" && pathname === "/employees") {
+      const aboutUsSection = document.querySelector("#contactEmployees")
+      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+    }
   }
 
   return (
@@ -104,7 +136,7 @@ export default function Hero({
             {language === "DE" &&
               navigationDE.map((item) => (
                 <Link
-                  onClick={scrollToAboutUs}
+                  onClick={scrollToDifferentSections}
                   key={item.name}
                   to={item.href}
                   className="text-sm font-semibold leading-6 text-gray-900">
@@ -114,7 +146,7 @@ export default function Hero({
             {language === "ES" &&
               navigationES.map((item) => (
                 <Link
-                  onClick={scrollToAboutUs}
+                  onClick={scrollToDifferentSections}
                   key={item.name}
                   to={item.href}
                   className="text-sm font-semibold leading-6 text-gray-900">
@@ -168,7 +200,7 @@ export default function Hero({
                   {language === "DE" &&
                     navigationDE.map((item) => (
                       <a
-                        onClick={scrollToAboutUs}
+                        onClick={scrollToDifferentSections}
                         key={item.name}
                         href={item.href}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -179,7 +211,7 @@ export default function Hero({
                   {language === "ES" &&
                     navigationES.map((item) => (
                       <a
-                        onClick={scrollToAboutUs}
+                        onClick={scrollToDifferentSections}
                         key={item.name}
                         href={item.href}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">

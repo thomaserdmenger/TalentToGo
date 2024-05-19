@@ -21,6 +21,19 @@ export default function ContactForm() {
     // console.log({ firstname, lastname, email, phone, street, zip, city, state, message, approval })
   }
 
+  const handleCancel = () => {
+    setFirstname("")
+    setLastname("")
+    setEmail("")
+    setPhone("")
+    setStreet("")
+    setZip("")
+    setCity("")
+    setState("")
+    setMessage("")
+    setApproval(false)
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <div className="space-y-12">
@@ -517,13 +530,18 @@ export default function ContactForm() {
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6 max-w-7xl mx-auto px-6">
-        <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
-          Cancel
+        <button
+          onClick={handleCancel}
+          type="button"
+          className="text-sm font-semibold leading-6 text-gray-900">
+          {language === "DE" && formDataDE.cancel}
+          {language === "ES" && formDataES.cancel}
         </button>
         <button
           type="submit"
           className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-          Save
+          {language === "DE" && formDataDE.submit}
+          {language === "ES" && formDataES.submit}
         </button>
       </div>
     </form>
