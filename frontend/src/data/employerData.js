@@ -4,43 +4,50 @@ export const employerDataDE = {
 }
 
 export const employerDataES = {
-  heading: "TalentToGo: We find the specialists you urgently need",
+  heading: "TalentToGo: Encontramos los trabajadores cualificados que necesita con urgencia",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
 }
 
 export const employerPlacementDE = {
   features: [
     {
+      id: 1,
       name: "Kontakt",
       description:
         "Sie teilen uns Ihre Wünsche und Anforderungen für Ihre Kandidaten mit einem Suchauftrag mit.",
     },
     {
+      id: 2,
       name: "Matching",
       description:
         "Wir präsentieren Ihnen passende Kandidaten aus unserem Pool. Sie treffen die Wunschkandidaten per Videokonferenz und schließen dann einen Vermittlungsvertrag mit TalentToGo und einen Arbeitsvertrag mit Ihrer Fachkraft ab.",
     },
     {
+      id: 3,
       name: "Deutschkurs",
       description:
         "Für ein Visum benötigen Ihre zukünftigen Mitarbeiter Deutschkenntnisse, die von einer zertifizierten Institution in Mexiko bescheinigt werden. Dieser Prozess dauert etwa 6 Monate und entspricht dem Niveau A2.",
     },
     {
+      id: 4,
       name: "Visumantrag",
       description:
         "Wir bereiten alle benötigten Visumdokumente vor und übernehmen für Sie die bürokratischen Angelegenheiten.",
     },
     {
+      id: 5,
       name: "Ankunft",
       description:
-        "Mit dem Visum im Gepäck kann die Fachkraft bereits als Pflegehilfskraft bei Ihnen mit 20 Stunden pro Woche arbeiten. Der Arbeitgeber stellt eine Unterkunft zur Verfügung, bis die Anerkennung erreicht ist. Unser Relocationservice begleitet Sie bei weiteren Behördengängen.",
+        "Mit dem Visum im Gepäck kann die Fachkraft bereits als Pflegehilfskraft bei Ihnen mit 20 Stunden pro Woche arbeiten. Der Arbeitgeber stellt eine Unterkunft zur Verfügung, bis die Anerkennung erreicht ist. Unser Relocation-Service begleitet Sie bei weiteren Behördengängen.",
     },
     {
+      id: 6,
       name: "Anerkennung",
       description:
         "Nachdem der Antrag auf Anerkennung der ausländischen Qualifikation gestellt wurde, wird weiterhin Deutsch gelernt, bis das B2-Niveau erreicht ist. Anschließend wird ein Anpassungslehrgang besucht und die Kenntnisprüfung abgelegt.",
     },
     {
+      id: 7,
       name: "Ihre Fachkraft",
       description:
         "Nach bestandener Anerkennung bleibt die Fachkraft gemäß Vereinbarung im Arbeitsvertrag für zwei Jahre im Unternehmen, um Sie zu unterstützen.",
@@ -54,72 +61,86 @@ export const employerPlacementDE = {
 export const employerPlacementES = {
   features: [
     {
-      name: "Contact",
+      id: 1,
+      name: "Contacto",
       description:
-        "You tell us your wishes and requirements for your candidates with a search request.",
+        "Nos comparte sus deseos y requisitos para sus candidatos con una orden de búsqueda.",
     },
     {
-      name: "Matching",
+      id: 2,
+      name: "A juego",
       description:
-        "We present you with suitable candidates from our pool. You meet the desired candidates via video conference and then conclude a placement contract with TalentToGo and an employment contract with your specialist.",
+        "Le presentamos candidatos adecuados de nuestro grupo. Conocerá a los candidatos deseados por videoconferencia y luego firmará un contrato de prácticas con TalentToGo y un contrato laboral con su especialista.",
     },
     {
-      name: "German course",
+      id: 3,
+      name: "Curso de aleman",
       description:
-        "In order to obtain a visa, your future employees need German language skills that are certified by a certified institution in Mexico. This process takes about 6 months and corresponds to level A2.",
+        "Para obtener una visa, sus futuros empleados necesitan conocimientos del idioma alemán certificados por una institución certificada en México. Este proceso dura unos 6 meses y corresponde al nivel A2.",
     },
     {
-      name: "Visa application",
+      id: 4,
+      name: "Solicitud de visa",
       description:
-        "We prepare all the necessary visa documents and take care of the bureaucratic matters for you.",
+        "Preparamos todos los documentos de visa necesarios y nos encargamos de los asuntos burocráticos por usted.",
     },
     {
-      name: "Arrival",
+      id: 5,
+      name: "Llegada",
       description:
-        "With the visa in hand, the specialist can already work for you as a care assistant for 20 hours a week. The employer will provide accommodation until recognition has been obtained. Our relocation service will assist you with further administrative procedures.",
+        "Con el visado en mano, el especialista ya puede trabajar para usted como auxiliar de enfermería durante 20 horas semanales. El empleador proporciona alojamiento hasta que se logre el reconocimiento. Nuestro servicio de reubicación le acompaña en otros trámites administrativos.",
     },
     {
-      name: "Recognition",
+      id: 6,
+      name: "Reconocimiento",
       description:
-        "After the application for recognition of the foreign qualification has been submitted, German continues to be studied until the B2 level is reached. An adaptation course is then attended and the knowledge test is taken.",
+        "Una vez presentada la solicitud de reconocimiento del título extranjero, se seguirá aprendiendo alemán hasta alcanzar el nivel B2. Luego asistirás a un curso de adaptación y realizarás la prueba de conocimientos.",
     },
     {
-      name: "Your specialist",
+      id: 7,
+      name: "Tu especialista",
       description:
-        "Once they have been recognized, the specialist will remain with the company for two years to support you, as agreed in the employment contract.",
+        "Tras el reconocimiento exitoso, el especialista permanecerá en la empresa durante dos años según lo acordado en el contrato de trabajo para ayudarle.",
     },
   ],
   slogan: "Slogan or Call to Action",
-  heading: "The process of recruiting specialists",
+  heading: "Proceso de colocación de trabajadores calificados",
   text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
 }
 
 export const employerFaqDE = {
   faqs: [
     {
-      question: "Was ist das Beste an der Schweiz?",
+      id: 1,
+      question:
+        "Welche Kriterien erfüllen die Kandidat:innen um in Deutschland arbeiten zu können?",
       answer:
-        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Für ein Arbeitsvisum brauchen die Kandidaten zwingend einen Hochschulbschluss von einer anerkannten Universität.",
     },
     {
-      question: "Was ist das Beste an der Schweiz?",
+      id: 2,
+      question:
+        "Wenn ich eine Fachkraft mit Universitätsabschluss aus Mexiko einstellen möchte, worauf muss ich achten?",
       answer:
-        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Alle Papiere für die Einreise sowie rechtliche Ansprüche müssen vollständig vorliegen. TalenToGo vermittelt ausschließlich Absolvent:innen, die wir persönlich überprüfen. Wir begleiten die Fachkraft bei dem gesamten Weg nach Deutschland und sind auch vor Ort für die Arbeitgeber da, wenn Fragen aufkommen. Wir kümmern uns um Behördengänge, damit Sie Zeit für die wichtigen Dinge haben.",
     },
     {
-      question: "Was ist das Beste an der Schweiz?",
+      id: 3,
+      question: "Wer sucht die Fachkräfte in Mexiko aus?",
       answer:
-        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "TalenToGo arbeitet mit lokalen Ansprechpartnern zusammen. Wir sind sehr gut vernetzt und stehen in ständigem Austausch miteinander. Wir übernehmen für Sie die Dokumentation für die Anerkennungspartnerschaft.",
     },
     {
-      question: "Was ist das Beste an der Schweiz?",
+      id: 4,
+      question: "Wie läuft das Auswahlverfahren ab?",
       answer:
-        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Wir stellen Ihnen die Kandidat:innen vor und bieten Ihnen geleitete Online-Interviews an. Gerne stehen wir als Übersetzer und Kommunikationsverstärker für Sie zur Verfügung. Danach kümmern wir uns um die dazugehörigen Angelegenheiten.",
     },
     {
-      question: "Was ist das Beste an der Schweiz?",
+      id: 5,
+      question: "Finden Sie keinen Lehrling?",
       answer:
-        "Ich weiß nicht, aber die Flagge ist ein großes Plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Wir können Ihnen begabte junge Menschen vermitteln, die von einer Ausbildung in Ihrem Handwerk träumen. Sprechen Sie uns an, dann finden wir eine Lösung!",
     },
   ],
   heading: "Häufig gestelle Fragen",
@@ -128,30 +149,36 @@ export const employerFaqDE = {
 export const employerFaqES = {
   faqs: [
     {
-      question: "What's the best thing about Switzerland?",
+      id: 1,
+      question: "¿Qué criterios deben cumplir los candidatos para poder trabajar en Alemania?",
       answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Para una visa de trabajo, los candidatos deben tener un título universitario de una universidad reconocida.",
     },
     {
-      question: "What's the best thing about Switzerland?",
+      id: 2,
+      question:
+        "Si quiero contratar un profesional con título universitario de México ¿a qué debo prestar atención?",
       answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Todos los documentos de entrada y reclamos legales deben estar completos. TalenToGo solo coloca a graduados a quienes examinamos personalmente. Acompañamos al especialista durante todo el viaje a Alemania y también estamos allí para atender a los empleadores en caso de dudas. Nos encargamos de los trámites administrativos para que tengas tiempo para las cosas importantes.",
     },
     {
-      question: "What's the best thing about Switzerland?",
+      id: 3,
+      question: "¿Quién selecciona a los trabajadores calificados en México?",
       answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "TalentToGo trabaja con contactos locales. Estamos muy bien conectados y en constante comunicación entre nosotros. Nos encargamos de la documentación para la asociación de reconocimiento por usted.",
     },
     {
-      question: "What's the best thing about Switzerland?",
+      id: 4,
+      question: "Como funciona el proceso de selección?",
       answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Te presentamos a los candidatos y te ofrecemos entrevistas online guiadas. Estaremos encantados de actuar como traductores y amplificadores de comunicación para usted. Luego nos ocuparemos de los asuntos pertinentes.",
     },
     {
-      question: "What's the best thing about Switzerland?",
+      id: 5,
+      question: "¿No encuentras un aprendiz?",
       answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Podemos proporcionarte jóvenes talentosos que sueñan con formarse en tu oficio. ¡Hable con nosotros y encontraremos una solución!",
     },
   ],
-  heading: "Frequently asked questions",
+  heading: "Preguntas frecuentes",
 }
