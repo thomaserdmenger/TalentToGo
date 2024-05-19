@@ -84,7 +84,9 @@ export default function Hero({
 
   return (
     <div className="bg-white">
+      {/* Header and Navigation */}
       <header className="absolute inset-x-0 top-0 z-50">
+        {/* Desktop Menu */}
         <nav className="flex items-center justify-between p-6 lg:px-8 relative" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
@@ -145,6 +147,8 @@ export default function Hero({
             <LanguageSelect />
           </div>
         </nav>
+
+        {/* Mobile Menu */}
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -171,6 +175,7 @@ export default function Hero({
                   {language === "DE" &&
                     navigationDE.map((item) => (
                       <a
+                        onClick={scrollToAboutUs}
                         key={item.name}
                         href={item.href}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -181,6 +186,7 @@ export default function Hero({
                   {language === "US" &&
                     navigationUS.map((item) => (
                       <a
+                        onClick={scrollToAboutUs}
                         key={item.name}
                         href={item.href}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -210,6 +216,7 @@ export default function Hero({
         </Dialog>
       </header>
 
+      {/* Hero Section */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
