@@ -338,7 +338,7 @@ const HomePage = () => {
           </div>
         </section>
         {/* CONTACT FORM SECTION */}
-        <section className="contactFormSection">
+        <section id="contactHome" className="contactFormSection">
           <ContactForm />
         </section>
       </main>

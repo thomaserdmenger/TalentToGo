@@ -175,7 +175,7 @@ const EmployerPage = () => {
           </div>
         </section>
         {/* CONTACT FORM SECTION */}
-        <section className="contactFormSection">
+        <section id="contactEmployers" className="contactFormSection">
           <ContactForm />
         </section>
       </main>

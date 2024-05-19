@@ -20,7 +20,7 @@ const EmployeesPage = () => {
       </header>
       <main>
         {/* CONTACT FORM SECTION */}
-        <section className="contactFormSection">
+        <section id="contactEmployees" className="contactFormSection">
           <ContactForm />
         </section>
       </main>
