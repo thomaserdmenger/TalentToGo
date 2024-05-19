@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm.jsx"
 import Footer from "../components/Footer.jsx"
 import Hero from "../components/Hero"
 import { employeesDataDE, employeesDataES } from "../data/employeesData.js"
@@ -17,7 +18,12 @@ const EmployeesPage = () => {
           employeesDataES={employeesDataES}
         />
       </header>
-      <main></main>
+      <main>
+        {/* CONTACT FORM SECTION */}
+        <section className="contactFormSection">
+          <ContactForm />
+        </section>
+      </main>
       <Footer />
     </>
   )
