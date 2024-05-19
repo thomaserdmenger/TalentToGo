@@ -12,10 +12,13 @@ export default function ContactForm() {
   const [message, setMessage] = useState("")
   const [approval, setApproval] = useState(false)
 
-  console.log({ firstname, lastname, email, phone, street, zip, city, state, message, approval })
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // console.log({ firstname, lastname, email, phone, street, zip, city, state, message, approval })
+  }
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className="space-y-12">
         {/* <div className="border-b border-gray-900/10 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900">Profile</h2>
