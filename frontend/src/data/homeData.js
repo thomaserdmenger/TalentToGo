@@ -12,11 +12,11 @@ export const homeDataHeroDE = {
   buttonEmployees: "Für Arbeitnehmer",
 }
 
-export const homeDataHeroUS = {
-  heading: "TalentToGo: Your experts for highly qualified professionals from Mexico",
+export const homeDataHeroES = {
+  heading: "TalentToGo: Sus expertos en profesionales altamente calificados de México",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
-  buttonEmployers: "For employers",
-  buttonEmployees: "For employees",
+  buttonEmployers: "Para empleadores",
+  buttonEmployees: "Para los trabajadores",
 }
 
 export const homeDataProcessDE = {
@@ -30,15 +30,15 @@ export const homeDataProcessDE = {
     "Mit mehreren Fächern können Sie Ihre Snacks besser organisieren. Die schnell zugängliche Aufbewahrungstasche ist selbst für die unerwartetsten Snack-Attacken und den Bedarf an gemeinsamer Nutzung bereit.",
 }
 
-export const homeDataProcessUS = {
-  heading: "Information about the process",
-  text: "Our patented padded snack sleeve construction protects your favorite treats from getting smooshed during all-day adventures, long shifts at work, and tough travel schedules.",
-  headingImgOne: "For employers",
-  headingImgTwo: "For employees",
+export const homeDataProcessES = {
+  heading: "Información sobre el proceso",
+  text: "Nuestra funda de bocadillos acolchada patentada protege tus golosinas favoritas de ser aplastadas durante aventuras de todo el día, largas jornadas de trabajo y viajes agotadores.",
+  headingImgOne: "Para empleadores",
+  headingImgTwo: "Para los trabajadores",
   textImgOne:
-    "The 20L model has enough space for 370 candy bars, 6 cylinders of chips, 1220 standard gumballs, or any combination of on-the-go treats that your heart desires. Yes, we did the math.",
+    "El modelo de 20 litros tiene espacio para 370 barras de chocolate, 6 cilindros de papas fritas, 1220 pelotas de goma estándar o cualquier combinación de golosinas para llevar que el corazón desee. Sí, lo hemos calculado.",
   textImgTwo:
-    "Up your snack organization game with multiple compartment options. The quick-access stash pouch is ready for even the most unexpected snack attacks and sharing needs.",
+    "Con varias secciones, puedes organizar tus bocadillos de manera más eficiente. La bolsa de almacenamiento de fácil acceso está lista incluso para los ataques de bocadillos más inesperados y para compartir con los demás.",
 }
 
 export const homeDataServiceDE = {
@@ -73,9 +73,9 @@ export const homeDataServiceDE = {
   ],
 }
 
-export const homeDataServiceUS = {
-  slogan: "Slogan or Call to action",
-  heading: "Everything you need to deploy your app",
+export const homeDataServiceES = {
+  slogan: "Eslogan o llamada a la acción",
+  heading: "Todo lo que necesitas para implementar tu aplicación",
   text: "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
   features: [
     {
@@ -128,9 +128,9 @@ export const aboutUsDE = {
   ],
 }
 
-export const aboutUsUS = {
-  heading: "Our Team",
-  text: "We are a dynamic group of people who are passionate about what we do and committed to achieving the best results for our customers.",
+export const aboutUsES = {
+  heading: "Nuestro equipo",
+  text: "Somos un grupo dinámico de personas apasionadas que se esfuerzan por lograr los mejores resultados para nuestros clientes.",
   people: [
     {
       fullname: "Katharina Wenzel",

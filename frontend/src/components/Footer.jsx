@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { languageContext } from "../Context/Context.jsx"
 import { calculateYear } from "../utils/calculateYear.js"
-import { footerDataDE, footerDataUS } from "../data/footerData"
+import { footerDataDE, footerDataES } from "../data/footerData"
 
 const Footer = () => {
   const { language } = useContext(languageContext)
@@ -38,12 +38,12 @@ const Footer = () => {
           </>
         )}
 
-        {language === "US" && (
+        {language === "ES" && (
           <>
             <nav
               className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
               aria-label="Footer">
-              {footerDataUS.main.map((item) => (
+              {footerDataES.main.map((item) => (
                 <div key={item.name} className="pb-6">
                   <a
                     href={item.href}
@@ -54,7 +54,7 @@ const Footer = () => {
               ))}
             </nav>
             <div className="mt-10 flex justify-center space-x-10">
-              {footerDataUS.social.map((item) => (
+              {footerDataES.social.map((item) => (
                 <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -62,7 +62,7 @@ const Footer = () => {
               ))}
             </div>
             <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-              &copy; {calculateYear()} {footerDataUS.copyright}
+              &copy; {calculateYear()} {footerDataES.copyright}
             </p>
           </>
         )}

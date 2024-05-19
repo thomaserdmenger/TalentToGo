@@ -5,14 +5,14 @@ import { CheckIcon } from "@heroicons/react/20/solid"
 import { languageContext } from "../Context/Context.jsx"
 import Footer from "../components/Footer.jsx"
 import Hero from "../components/Hero"
-import { employerDataDE, employerDataUS } from "../data/employerData.js"
-import { homeDataHeroDE, homeDataHeroUS } from "../data/homeData.js"
-import { navigationDE, navigationUS } from "../data/navigation.js"
+import { employerDataDE, employerDataES } from "../data/employerData.js"
+import { homeDataHeroDE, homeDataHeroES } from "../data/homeData.js"
+import { navigationDE, navigationES } from "../data/navigation.js"
 import {
   employerPlacementDE,
-  employerPlacementUS,
+  employerPlacementES,
   employerFaqDE,
-  employerFaqUS,
+  employerFaqES,
 } from "../data/employerData.js"
 
 const EmployerPage = () => {
@@ -23,11 +23,11 @@ const EmployerPage = () => {
       <header>
         <Hero
           homeDataHeroDE={homeDataHeroDE}
-          homeDataHeroUS={homeDataHeroUS}
+          homeDataHeroES={homeDataHeroES}
           navigationDE={navigationDE}
-          navigationUS={navigationUS}
+          navigationES={navigationES}
           employerDataDE={employerDataDE}
-          employerDataUS={employerDataUS}
+          employerDataES={employerDataES}
         />
       </header>
       <main>
@@ -66,21 +66,21 @@ const EmployerPage = () => {
                   </>
                 )}
 
-                {language === "US" && (
+                {language === "ES" && (
                   <>
                     <div className="lg:text-center col-span-2 ">
                       <h2 className="text-base font-semibold leading-7 text-indigo-600">
-                        {employerPlacementUS.slogan}
+                        {employerPlacementES.slogan}
                       </h2>
                       <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        {employerPlacementUS.heading}
+                        {employerPlacementES.heading}
                       </p>
                       <p className="mt-6 text-base leading-7 text-gray-600">
-                        {employerPlacementUS.text}
+                        {employerPlacementES.text}
                       </p>
                     </div>
                     <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
-                      {employerPlacementUS.features.map((feature) => (
+                      {employerPlacementES.features.map((feature) => (
                         <div key={feature.name} className="relative pl-9">
                           <dt className="font-semibold text-gray-900">
                             <CheckIcon
@@ -106,7 +106,7 @@ const EmployerPage = () => {
               <div className="px-8 mx-auto max-w-4xl divide-y divide-gray-900/10 lg:max-w-6xl">
                 <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
                   {language === "DE" && employerFaqDE.heading}
-                  {language === "US" && employerFaqUS.heading}
+                  {language === "ES" && employerFaqES.heading}
                 </h2>
                 <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
                   {language === "DE" && (
@@ -139,9 +139,9 @@ const EmployerPage = () => {
                     </>
                   )}
 
-                  {language === "US" && (
+                  {language === "ES" && (
                     <>
-                      {employerFaqUS.faqs.map((faq, index) => (
+                      {employerFaqES.faqs.map((faq, index) => (
                         <Disclosure as="div" key={index} className="pt-6">
                           {({ open }) => (
                             <>

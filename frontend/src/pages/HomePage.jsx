@@ -3,15 +3,15 @@ import { useContext } from "react"
 import { languageContext } from "../Context/Context.jsx"
 import Hero from "../components/Hero"
 import Footer from "../components/Footer.jsx"
-import { homeDataHeroDE, homeDataHeroUS } from "../data/homeData.js"
-import { navigationDE, navigationUS } from "../data/navigation.js"
+import { homeDataHeroDE, homeDataHeroES } from "../data/homeData.js"
+import { navigationDE, navigationES } from "../data/navigation.js"
 import {
   homeDataProcessDE,
-  homeDataProcessUS,
+  homeDataProcessES,
   homeDataServiceDE,
-  homeDataServiceUS,
+  homeDataServiceES,
   aboutUsDE,
-  aboutUsUS,
+  aboutUsES,
 } from "../data/homeData.js"
 import ContactForm from "../components/ContactForm.jsx"
 
@@ -23,9 +23,9 @@ const HomePage = () => {
       <header>
         <Hero
           homeDataHeroDE={homeDataHeroDE}
-          homeDataHeroUS={homeDataHeroUS}
+          homeDataHeroES={homeDataHeroES}
           navigationDE={navigationDE}
-          navigationUS={navigationUS}
+          navigationES={navigationES}
         />
       </header>
       <main>
@@ -86,16 +86,16 @@ const HomePage = () => {
                   </>
                 )}
 
-                {language === "US" && (
+                {language === "ES" && (
                   <>
                     <div className="flex flex-col items-center text-center">
                       <h2
                         id="details-heading"
                         className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        {homeDataProcessUS.heading}
+                        {homeDataProcessES.heading}
                       </h2>
                       <p className="mt-3 max-w-3xl text-lg text-gray-600">
-                        {homeDataProcessUS.text}
+                        {homeDataProcessES.text}
                       </p>
                     </div>
 
@@ -110,10 +110,10 @@ const HomePage = () => {
                             />
                           </div>
                           <h2 className="mt-8 font-bold text-lg">
-                            {homeDataProcessUS.headingImgOne}
+                            {homeDataProcessES.headingImgOne}
                           </h2>
                           <p className="mt-2 text-base text-gray-500">
-                            {homeDataProcessUS.textImgOne}
+                            {homeDataProcessES.textImgOne}
                           </p>
                         </div>
                       </Link>
@@ -127,10 +127,10 @@ const HomePage = () => {
                             />
                           </div>
                           <h2 className="mt-8 font-bold text-lg">
-                            {homeDataProcessUS.headingImgTwo}
+                            {homeDataProcessES.headingImgTwo}
                           </h2>
                           <p className="mt-2 text-base text-gray-500">
-                            {homeDataProcessUS.textImgTwo}
+                            {homeDataProcessES.textImgTwo}
                           </p>
                         </div>
                       </Link>
@@ -176,20 +176,20 @@ const HomePage = () => {
                 </>
               )}
 
-              {language === "US" && (
+              {language === "ES" && (
                 <>
                   <div className="mx-auto max-w-2xl lg:text-center">
                     <h2 className="text-base font-semibold leading-7 text-indigo-600">
-                      {homeDataServiceUS.slogan}
+                      {homeDataServiceES.slogan}
                     </h2>
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                      {homeDataServiceUS.heading}
+                      {homeDataServiceES.heading}
                     </p>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">{homeDataServiceUS.text}</p>
+                    <p className="mt-6 text-lg leading-8 text-gray-600">{homeDataServiceES.text}</p>
                   </div>
                   <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                      {homeDataServiceUS.features.map((feature) => (
+                      {homeDataServiceES.features.map((feature) => (
                         <div key={feature.name} className="relative pl-16">
                           <dt className="text-base font-semibold leading-7 text-gray-900">
                             <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
@@ -274,19 +274,19 @@ const HomePage = () => {
               </>
             )}
 
-            {language === "US" && (
+            {language === "ES" && (
               <>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                   <div className="mx-auto max-w-2xl md:max-w-2xl lg:max-w-5xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                      {aboutUsUS.heading}
+                      {aboutUsES.heading}
                     </h2>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">{aboutUsUS.text}</p>
+                    <p className="mt-6 text-lg leading-8 text-gray-600">{aboutUsES.text}</p>
                   </div>
                   <ul
                     role="list"
                     className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    {aboutUsUS.people.map((person, index) => (
+                    {aboutUsES.people.map((person, index) => (
                       <li key={index}>
                         <img
                           className="aspect-[3/2] w-full rounded-2xl object-cover"

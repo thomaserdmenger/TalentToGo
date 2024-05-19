@@ -75,16 +75,16 @@ export const footerDataDE = {
   copyright: "Talent To Go. Alle Rechte vorbehalten.",
 }
 
-export const footerDataUS = {
+export const footerDataES = {
   main: [
-    { name: "Home", href: "#" },
-    { name: "For employers", href: "#" },
-    { name: "For employees", href: "#" },
-    { name: "About us", href: "#" },
-    { name: "Contact", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "GTC", href: "#" },
-    { name: "Imprint", href: "#" },
+    { name: "Casa", href: "#" },
+    { name: "Para empleadores", href: "#" },
+    { name: "Para los trabajadores", href: "#" },
+    { name: "Sobre nosotros", href: "#" },
+    { name: "Contacto", href: "#" },
+    { name: "Protección de Datos", href: "#" },
+    { name: "CGC", href: "#" },
+    { name: "Aviso Legal", href: "#" },
   ],
   social: [
     {

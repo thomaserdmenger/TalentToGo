@@ -1,8 +1,8 @@
 import Footer from "../components/Footer.jsx"
 import Hero from "../components/Hero"
-import { employeesDataDE, employeesDataUS } from "../data/employeesData.js"
-import { homeDataHeroDE, homeDataHeroUS } from "../data/homeData.js"
-import { navigationDE, navigationUS } from "../data/navigation.js"
+import { employeesDataDE, employeesDataES } from "../data/employeesData.js"
+import { homeDataHeroDE, homeDataHeroES } from "../data/homeData.js"
+import { navigationDE, navigationES } from "../data/navigation.js"
 
 const EmployeesPage = () => {
   return (
@@ -10,11 +10,11 @@ const EmployeesPage = () => {
       <header>
         <Hero
           homeDataHeroDE={homeDataHeroDE}
-          homeDataHeroUS={homeDataHeroUS}
+          homeDataHeroES={homeDataHeroES}
           navigationDE={navigationDE}
-          navigationUS={navigationUS}
+          navigationES={navigationES}
           employeesDataDE={employeesDataDE}
-          employeesDataUS={employeesDataUS}
+          employeesDataES={employeesDataES}
         />
       </header>
       <main></main>

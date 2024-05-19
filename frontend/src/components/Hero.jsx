@@ -10,13 +10,13 @@ import { FaSquareWhatsapp } from "react-icons/fa6"
 
 export default function Hero({
   homeDataHeroDE,
-  homeDataHeroUS,
+  homeDataHeroES,
   navigationDE,
-  navigationUS,
+  navigationES,
   employerDataDE,
-  employerDataUS,
+  employerDataES,
   employeesDataDE,
-  employeesDataUS,
+  employeesDataES,
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { language } = useContext(languageContext)
@@ -24,15 +24,12 @@ export default function Hero({
   const navigate = useNavigate()
 
   const scrollToAboutUs = (e) => {
-    // console.log(e.target.textContent)
-    // console.log(pathname)
-
     if (e.target.textContent === "Über uns" && pathname === "/") {
       const aboutUsSection = document.querySelector("#aboutUs")
       aboutUsSection.scrollIntoView({ behavior: "smooth" })
     }
 
-    if (e.target.textContent === "About us" && pathname === "/") {
+    if (e.target.textContent === "Sobre nosotros" && pathname === "/") {
       const aboutUsSection = document.querySelector("#aboutUs")
       aboutUsSection.scrollIntoView({ behavior: "smooth" })
     }
@@ -42,18 +39,16 @@ export default function Hero({
         navigate("/")
         setTimeout(() => {
           const aboutUsSection = document.querySelector("#aboutUs")
-          console.log(aboutUsSection)
           aboutUsSection.scrollIntoView({ behavior: "smooth" })
         }, 20)
       }, 50)
     }
 
-    if (pathname === "/employer" && e.target.textContent === "About us") {
+    if (pathname === "/employer" && e.target.textContent === "Sobre nosotros") {
       setTimeout(() => {
         navigate("/")
         setTimeout(() => {
           const aboutUsSection = document.querySelector("#aboutUs")
-          console.log(aboutUsSection)
           aboutUsSection.scrollIntoView({ behavior: "smooth" })
         }, 20)
       }, 50)
@@ -64,18 +59,16 @@ export default function Hero({
         navigate("/")
         setTimeout(() => {
           const aboutUsSection = document.querySelector("#aboutUs")
-          console.log(aboutUsSection)
           aboutUsSection.scrollIntoView({ behavior: "smooth" })
         }, 20)
       }, 50)
     }
 
-    if (pathname === "/employees" && e.target.textContent === "About us") {
+    if (pathname === "/employees" && e.target.textContent === "Sobre nosotros") {
       setTimeout(() => {
         navigate("/")
         setTimeout(() => {
           const aboutUsSection = document.querySelector("#aboutUs")
-          console.log(aboutUsSection)
           aboutUsSection.scrollIntoView({ behavior: "smooth" })
         }, 20)
       }, 50)
@@ -118,8 +111,8 @@ export default function Hero({
                   {item.name}
                 </Link>
               ))}
-            {language === "US" &&
-              navigationUS.map((item) => (
+            {language === "ES" &&
+              navigationES.map((item) => (
                 <Link
                   onClick={scrollToAboutUs}
                   key={item.name}
@@ -183,8 +176,8 @@ export default function Hero({
                       </a>
                     ))}
 
-                  {language === "US" &&
-                    navigationUS.map((item) => (
+                  {language === "ES" &&
+                    navigationES.map((item) => (
                       <a
                         onClick={scrollToAboutUs}
                         key={item.name}
@@ -260,30 +253,30 @@ export default function Hero({
           </div>
         )}
 
-        {language === "US" && (
+        {language === "ES" && (
           <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                {pathname === "/" && homeDataHeroUS.heading}
-                {pathname === "/employer" && employerDataUS.heading}
-                {pathname === "/employees" && employeesDataUS.heading}
+                {pathname === "/" && homeDataHeroES.heading}
+                {pathname === "/employer" && employerDataES.heading}
+                {pathname === "/employees" && employeesDataES.heading}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                {pathname === "/" && homeDataHeroUS.text}
-                {pathname === "/employer" && employerDataUS.text}
-                {pathname === "/employees" && employeesDataUS.text}
+                {pathname === "/" && homeDataHeroES.text}
+                {pathname === "/employer" && employerDataES.text}
+                {pathname === "/employees" && employeesDataES.text}
               </p>
               {pathname === "/" && (
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
                     to="/employer"
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    {homeDataHeroUS.buttonEmployers}
+                    {homeDataHeroES.buttonEmployers}
                   </Link>
                   <Link
                     to="/employees"
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    {homeDataHeroUS.buttonEmployees}
+                    {homeDataHeroES.buttonEmployees}
                   </Link>
                 </div>
               )}
