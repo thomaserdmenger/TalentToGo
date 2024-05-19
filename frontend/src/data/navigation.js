@@ -6,10 +6,10 @@ export const navigationDE = [
   { name: "Kontakt", href: "#" },
 ]
 
-export const navigationUS = [
-  { name: "Home", href: "/" },
-  { name: "For employers", href: "/employer" },
-  { name: "For employees", href: "/employees" },
-  { name: "About us", href: "#" },
-  { name: "Contact", href: "#" },
+export const navigationES = [
+  { name: "Casa", href: "/" },
+  { name: "Para empleadores", href: "/employer" },
+  { name: "Para los trabajadores", href: "/employees" },
+  { name: "Sobre nosotros", href: "#" },
+  { name: "Contacto", href: "#" },
 ]

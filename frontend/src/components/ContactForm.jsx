@@ -113,11 +113,12 @@ export default function ContactForm() {
 
         <div className="pb-12 px-6 max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
-            Nehmen Sie Kontakt auf
+            {language === "DE" && formDataDE.heading}
+            {language === "ES" && formDataES.heading}
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
-            Füllen Sie das untenstehende Formular aus und wir melden uns so schnell wie möglich
-            zurück.
+            {language === "DE" && formDataDE.text}
+            {language === "ES" && formDataES.text}
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">

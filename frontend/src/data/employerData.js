@@ -3,7 +3,7 @@ export const employerDataDE = {
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
 }
 
-export const employerDataUS = {
+export const employerDataES = {
   heading: "TalentToGo: We find the specialists you urgently need",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
 }
@@ -51,7 +51,7 @@ export const employerPlacementDE = {
   text: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
 }
 
-export const employerPlacementUS = {
+export const employerPlacementES = {
   features: [
     {
       name: "Contact",
@@ -125,7 +125,7 @@ export const employerFaqDE = {
   heading: "Häufig gestelle Fragen",
 }
 
-export const employerFaqUS = {
+export const employerFaqES = {
   faqs: [
     {
       question: "What's the best thing about Switzerland?",

@@ -5,7 +5,7 @@ import { languageContext } from "../Context/Context"
 
 const languageOptions = [
   { id: 1, name: "DE" },
-  { id: 2, name: "US" },
+  { id: 2, name: "ES" },
 ]
 
 function classNames(...classes) {

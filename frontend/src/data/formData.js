@@ -1,4 +1,6 @@
 export const formDataDE = {
+  heading: "Nehmen Sie Kontakt auf",
+  text: "Füllen Sie das untenstehende Formular aus und wir melden uns so schnell wie möglich zurück.",
   firstname: {
     title: "Vorname",
     placeholder: "Anna",
@@ -52,6 +54,8 @@ export const formDataDE = {
 }
 
 export const formDataES = {
+  heading: "Póngase en contacto",
+  text: "Rellene el siguiente formulario y nos pondremos en contacto lo antes posible.",
   firstname: {
     title: "Nombre",
     placeholder: "María",
