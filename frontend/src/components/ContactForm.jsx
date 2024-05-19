@@ -1,6 +1,10 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { formDataDE, formDataES } from "../data/formData.js"
+import { languageContext } from "../Context/Context.jsx"
 
 export default function ContactForm() {
+  const { language } = useContext(languageContext)
+
   const [firstname, setFirstname] = useState("")
   const [lastname, setLastname] = useState("")
   const [email, setEmail] = useState("")
@@ -122,12 +126,18 @@ export default function ContactForm() {
               <label
                 htmlFor="first-name"
                 className="block text-sm font-medium leading-6 text-gray-900">
-                Vorname
+                {language === "DE" && formDataDE["firstname"].title}
+                {language === "ES" && formDataES["firstname"].title}
+                {formDataDE["firstname"].required && "*"}
               </label>
               <div className="mt-2">
                 <input
                   value={firstname}
                   onChange={(e) => setFirstname(e.target.value)}
+                  placeholder={
+                    (language === "DE" && formDataDE["firstname"].placeholder) ||
+                    (language === "ES" && formDataES["firstname"].placeholder)
+                  }
                   type="text"
                   name="first-name"
                   id="first-name"
@@ -142,12 +152,18 @@ export default function ContactForm() {
               <label
                 htmlFor="last-name"
                 className="block text-sm font-medium leading-6 text-gray-900">
-                Last name
+                {language === "DE" && formDataDE["lastname"].title}
+                {language === "ES" && formDataES["lastname"].title}
+                {formDataDE["lastname"].required && "*"}
               </label>
               <div className="mt-2">
                 <input
                   value={lastname}
                   onChange={(e) => setLastname(e.target.value)}
+                  placeholder={
+                    (language === "DE" && formDataDE["lastname"].placeholder) ||
+                    (language === "ES" && formDataES["lastname"].placeholder)
+                  }
                   type="text"
                   name="last-name"
                   id="last-name"
@@ -160,12 +176,18 @@ export default function ContactForm() {
             {/* E-Mail */}
             <div className="sm:col-span-3">
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                Email address
+                {language === "DE" && formDataDE["email"].title}
+                {language === "ES" && formDataES["email"].title}
+                {formDataDE["email"].required && "*"}
               </label>
               <div className="mt-2">
                 <input
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  placeholder={
+                    (language === "DE" && formDataDE["email"].placeholder) ||
+                    (language === "ES" && formDataES["email"].placeholder)
+                  }
                   id="email"
                   name="email"
                   type="email"
@@ -178,12 +200,18 @@ export default function ContactForm() {
             {/* Phone */}
             <div className="sm:col-span-3">
               <label htmlFor="phone" className="block text-sm font-medium leading-6 text-gray-900">
-                Phone Number
+                {language === "DE" && formDataDE["phone"].title}
+                {language === "ES" && formDataES["phone"].title}
+                {formDataDE["phone"].required && "*"}
               </label>
               <div className="mt-2">
                 <input
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  placeholder={
+                    (language === "DE" && formDataDE["phone"].placeholder) ||
+                    (language === "ES" && formDataES["phone"].placeholder)
+                  }
                   id="phone"
                   name="phone"
                   type="tel"
@@ -218,12 +246,18 @@ export default function ContactForm() {
               <label
                 htmlFor="street-address"
                 className="block text-sm font-medium leading-6 text-gray-900">
-                Street address
+                {language === "DE" && formDataDE["street"].title}
+                {language === "ES" && formDataES["street"].title}
+                {formDataDE["street"].required && "*"}
               </label>
               <div className="mt-2">
                 <input
                   value={street}
                   onChange={(e) => setStreet(e.target.value)}
+                  placeholder={
+                    (language === "DE" && formDataDE["street"].placeholder) ||
+                    (language === "ES" && formDataES["street"].placeholder)
+                  }
                   type="text"
                   name="street-address"
                   id="street-address"
@@ -238,12 +272,18 @@ export default function ContactForm() {
               <label
                 htmlFor="postal-code"
                 className="block text-sm font-medium leading-6 text-gray-900">
-                Postal code
+                {language === "DE" && formDataDE["zip"].title}
+                {language === "ES" && formDataES["zip"].title}
+                {formDataDE["zip"].required && "*"}
               </label>
               <div className="mt-2">
                 <input
                   value={zip}
                   onChange={(e) => setZip(e.target.value)}
+                  placeholder={
+                    (language === "DE" && formDataDE["zip"].placeholder) ||
+                    (language === "ES" && formDataES["zip"].placeholder)
+                  }
                   type="text"
                   name="postal-code"
                   id="postal-code"
@@ -257,12 +297,18 @@ export default function ContactForm() {
             {/* City */}
             <div className="sm:col-span-2 lg:col-span-1">
               <label htmlFor="city" className="block text-sm font-medium leading-6 text-gray-900">
-                City
+                {language === "DE" && formDataDE["city"].title}
+                {language === "ES" && formDataES["city"].title}
+                {formDataDE["city"].required && "*"}
               </label>
               <div className="mt-2">
                 <input
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
+                  placeholder={
+                    (language === "DE" && formDataDE["city"].placeholder) ||
+                    (language === "ES" && formDataES["city"].placeholder)
+                  }
                   type="text"
                   name="city"
                   id="city"
@@ -275,12 +321,18 @@ export default function ContactForm() {
             {/* State */}
             <div className="sm:col-span-2 lg:col-span-1">
               <label htmlFor="region" className="block text-sm font-medium leading-6 text-gray-900">
-                State
+                {language === "DE" && formDataDE["state"].title}
+                {language === "ES" && formDataES["state"].title}
+                {formDataDE["state"].required && "*"}
               </label>
               <div className="mt-2">
                 <input
                   value={state}
                   onChange={(e) => setState(e.target.value)}
+                  placeholder={
+                    (language === "DE" && formDataDE["state"].placeholder) ||
+                    (language === "ES" && formDataES["state"].placeholder)
+                  }
                   type="text"
                   name="region"
                   id="region"
@@ -295,12 +347,18 @@ export default function ContactForm() {
               <label
                 htmlFor="message"
                 className="block text-sm font-medium leading-6 text-gray-900">
-                Message
+                {language === "DE" && formDataDE["message"].title}
+                {language === "ES" && formDataES["message"].title}
+                {formDataDE["message"].required && "*"}
               </label>
               <div className="mt-2">
                 <textarea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  placeholder={
+                    (language === "DE" && formDataDE["message"].placeholder) ||
+                    (language === "ES" && formDataES["message"].placeholder)
+                  }
                   type="text"
                   name="message"
                   id="message"
@@ -325,7 +383,9 @@ export default function ContactForm() {
               </div>
               <div className="text-sm leading-6 flex gap-2">
                 <label htmlFor="approval" className="font-medium text-gray-900">
-                  Approval
+                  {language === "DE" && formDataDE["approval"].title}
+                  {language === "ES" && formDataES["approval"].title}
+                  {formDataDE["approval"].required && "*"}
                 </label>
                 <p className="text-gray-500">
                   Get notified when someones posts a comment on a posting.
