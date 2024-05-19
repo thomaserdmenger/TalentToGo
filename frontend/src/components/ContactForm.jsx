@@ -1,6 +1,19 @@
-import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid"
+import { useState } from "react"
 
 export default function ContactForm() {
+  const [firstname, setFirstname] = useState("")
+  const [lastname, setLastname] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [street, setStreet] = useState("")
+  const [zip, setZip] = useState("")
+  const [city, setCity] = useState("")
+  const [state, setState] = useState("")
+  const [message, setMessage] = useState("")
+  const [approval, setApproval] = useState(false)
+
+  console.log({ firstname, lastname, email, phone, street, zip, city, state, message, approval })
+
   return (
     <form>
       <div className="space-y-12">
@@ -93,10 +106,11 @@ export default function ContactForm() {
 
         <div className="pb-12 px-6 max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
-            Personal Information
+            Nehmen Sie Kontakt auf
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
-            Use a permanent address where you can receive mail.
+            Füllen Sie das untenstehende Formular aus und wir melden uns so schnell wie möglich
+            zurück.
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
@@ -105,10 +119,12 @@ export default function ContactForm() {
               <label
                 htmlFor="first-name"
                 className="block text-sm font-medium leading-6 text-gray-900">
-                First name
+                Vorname
               </label>
               <div className="mt-2">
                 <input
+                  value={firstname}
+                  onChange={(e) => setFirstname(e.target.value)}
                   type="text"
                   name="first-name"
                   id="first-name"
@@ -127,6 +143,8 @@ export default function ContactForm() {
               </label>
               <div className="mt-2">
                 <input
+                  value={lastname}
+                  onChange={(e) => setLastname(e.target.value)}
                   type="text"
                   name="last-name"
                   id="last-name"
@@ -143,6 +161,8 @@ export default function ContactForm() {
               </label>
               <div className="mt-2">
                 <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   id="email"
                   name="email"
                   type="email"
@@ -159,9 +179,11 @@ export default function ContactForm() {
               </label>
               <div className="mt-2">
                 <input
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   id="phone"
                   name="phone"
-                  type="phone"
+                  type="tel"
                   autoComplete="phone"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
@@ -197,6 +219,8 @@ export default function ContactForm() {
               </label>
               <div className="mt-2">
                 <input
+                  value={street}
+                  onChange={(e) => setStreet(e.target.value)}
                   type="text"
                   name="street-address"
                   id="street-address"
@@ -215,10 +239,13 @@ export default function ContactForm() {
               </label>
               <div className="mt-2">
                 <input
+                  value={zip}
+                  onChange={(e) => setZip(e.target.value)}
                   type="text"
                   name="postal-code"
                   id="postal-code"
                   autoComplete="postal-code"
+                  pattern="\d{5}"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -231,6 +258,8 @@ export default function ContactForm() {
               </label>
               <div className="mt-2">
                 <input
+                  value={city}
+                  onChange={(e) => setCity(e.target.value)}
                   type="text"
                   name="city"
                   id="city"
@@ -247,6 +276,8 @@ export default function ContactForm() {
               </label>
               <div className="mt-2">
                 <input
+                  value={state}
+                  onChange={(e) => setState(e.target.value)}
                   type="text"
                   name="region"
                   id="region"
@@ -265,6 +296,8 @@ export default function ContactForm() {
               </label>
               <div className="mt-2">
                 <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   type="text"
                   name="message"
                   id="message"
@@ -278,10 +311,13 @@ export default function ContactForm() {
               {/* Checkbox */}
               <div className="flex h-6 items-center">
                 <input
+                  value={approval}
+                  onChange={(e) => setApproval(e.target.checked)}
                   id="approval"
                   name="approval"
                   type="checkbox"
                   className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                  checked={approval ? true : false}
                 />
               </div>
               <div className="text-sm leading-6 flex gap-2">
