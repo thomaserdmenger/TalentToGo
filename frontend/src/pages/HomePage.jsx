@@ -13,6 +13,7 @@ import {
   aboutUsDE,
   aboutUsUS,
 } from "../data/homeData.js"
+import ContactForm from "../components/ContactForm.jsx"
 
 const HomePage = () => {
   const { language } = useContext(languageContext)
@@ -335,6 +336,10 @@ const HomePage = () => {
               </>
             )}
           </div>
+        </section>
+        {/* CONTACT FORM SECTION */}
+        <section className="contactFormSection">
+          <ContactForm />
         </section>
       </main>
       <Footer />
