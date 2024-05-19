@@ -51,6 +51,8 @@ export const formDataDE = {
     placeholder: null,
     required: true,
   },
+  submit: "Abschicken",
+  cancel: "Abbrechen",
 }
 
 export const formDataES = {
@@ -106,4 +108,6 @@ export const formDataES = {
     placeholder: null,
     required: true,
   },
+  submit: "Enviar",
+  cancel: "Cancelar",
 }
