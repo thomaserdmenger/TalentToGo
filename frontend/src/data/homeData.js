@@ -6,14 +6,16 @@ import {
 } from "@heroicons/react/24/outline"
 
 export const homeDataHeroDE = {
-  heading: "TalentToGo: Ihre Experten für hochqualifizierte Fachkräfte aus Mexiko",
+  heading: "TalentToGo",
+  subheading: "Ihre Experten für hochqualifizierte Fachkräfte aus Mexiko",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
   buttonEmployers: "Für Arbeitgeber",
   buttonEmployees: "Für Arbeitnehmer",
 }
 
 export const homeDataHeroES = {
-  heading: "TalentToGo: Sus expertos en profesionales altamente calificados de México",
+  heading: "TalentToGo",
+  subheading: "Sus expertos en profesionales altamente calificados de México",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
   buttonEmployers: "Para empleadores",
   buttonEmployees: "Para los trabajadores",

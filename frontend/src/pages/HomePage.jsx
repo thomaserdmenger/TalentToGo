@@ -14,6 +14,7 @@ import {
   aboutUsES,
 } from "../data/homeData.js"
 import ContactForm from "../components/ContactForm.jsx"
+import HeroVideo from "../components/HeroVideo.jsx"
 
 const HomePage = () => {
   const { language } = useContext(languageContext)
@@ -21,12 +22,18 @@ const HomePage = () => {
   return (
     <>
       <header>
-        <Hero
+        <HeroVideo
           homeDataHeroDE={homeDataHeroDE}
           homeDataHeroES={homeDataHeroES}
           navigationDE={navigationDE}
           navigationES={navigationES}
         />
+        {/* <Hero
+          homeDataHeroDE={homeDataHeroDE}
+          homeDataHeroES={homeDataHeroES}
+          navigationDE={navigationDE}
+          navigationES={navigationES}
+        /> */}
       </header>
       <main>
         {/* SECTION PROCESS INFORMATION */}

@@ -1,10 +1,12 @@
 export const employeesDataDE = {
-  heading: "TalentToGo: Entdecken Sie Ihre beruflichen Möglichkeiten in Deutschland mit uns",
+  heading: "TalentToGo",
+  subheading: "Entdecken Sie Ihre beruflichen Möglichkeiten in Deutschland mit uns",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
 }
 
 export const employeesDataES = {
-  heading: "TalentToGo: Discover your career opportunities in Germany with us",
+  heading: "TalentToGo",
+  subheading: "Descubre tus oportunidades profesionales en Alemania con nosotros",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
 }
 

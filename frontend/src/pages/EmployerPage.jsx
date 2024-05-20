@@ -15,6 +15,7 @@ import {
   employerFaqES,
 } from "../data/employerData.js"
 import ContactForm from "../components/ContactForm.jsx"
+import HeroVideo from "../components/HeroVideo.jsx"
 
 const EmployerPage = () => {
   const { language } = useContext(languageContext)
@@ -22,7 +23,7 @@ const EmployerPage = () => {
   return (
     <>
       <header>
-        <Hero
+        <HeroVideo
           homeDataHeroDE={homeDataHeroDE}
           homeDataHeroES={homeDataHeroES}
           navigationDE={navigationDE}

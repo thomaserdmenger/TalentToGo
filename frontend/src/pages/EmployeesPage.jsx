@@ -13,6 +13,7 @@ import { navigationDE, navigationES } from "../data/navigation.js"
 import { languageContext } from "../Context/Context.jsx"
 import { Disclosure } from "@headlessui/react"
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline"
+import HeroVideo from "../components/HeroVideo.jsx"
 
 const EmployeesPage = () => {
   const { language } = useContext(languageContext)
@@ -20,7 +21,7 @@ const EmployeesPage = () => {
   return (
     <>
       <header>
-        <Hero
+        <HeroVideo
           homeDataHeroDE={homeDataHeroDE}
           homeDataHeroES={homeDataHeroES}
           navigationDE={navigationDE}
