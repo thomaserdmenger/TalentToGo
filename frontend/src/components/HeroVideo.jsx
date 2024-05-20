@@ -1,5 +1,5 @@
 import { useContext, useState, useRef, useEffect } from "react"
-import { Link, useLocation, useNavigate } from "react-router-dom"
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom"
 import { languageContext } from "../Context/Context"
 import LanguageSelect from "./LanguageSelect"
 import { Dialog } from "@headlessui/react"
@@ -141,25 +141,118 @@ export default function HeroVideo({
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {language === "DE" &&
-              navigationDE.map((item) => (
-                <Link
-                  onClick={scrollToDifferentSections}
-                  key={item.name}
-                  to={item.href}
-                  className="text-sm font-semibold leading-6 text-gray-900">
-                  {item.name}
-                </Link>
-              ))}
+              navigationDE.map((item) =>
+                pathname === "/" && item.name === "Home" ? (
+                  <NavLink
+                    onClick={scrollToDifferentSections}
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-white">
+                    {item.name}
+                  </NavLink>
+                ) : (
+                    <Link
+                      onClick={scrollToDifferentSections}
+                      key={item.name}
+                      to={item.href}
+                      className="text-sm font-semibold leading-6 text-white">
+                      {item.name}
+                    </Link>
+                  ) &&
+                  pathname === "/employer" &&
+                  item.name === "Für Arbeitgeber" ? (
+                  <NavLink
+                    onClick={scrollToDifferentSections}
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-white">
+                    {item.name}
+                  </NavLink>
+                ) : (
+                    <Link
+                      onClick={scrollToDifferentSections}
+                      key={item.name}
+                      to={item.href}
+                      className="text-sm font-semibold leading-6 text-white">
+                      {item.name}
+                    </Link>
+                  ) &&
+                  pathname === "/employees" &&
+                  item.name === "Für Arbeitnehmer" ? (
+                  <NavLink
+                    onClick={scrollToDifferentSections}
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-white">
+                    {item.name}
+                  </NavLink>
+                ) : (
+                  <Link
+                    onClick={scrollToDifferentSections}
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-white">
+                    {item.name}
+                  </Link>
+                )
+              )}
+
             {language === "ES" &&
-              navigationES.map((item) => (
-                <Link
-                  onClick={scrollToDifferentSections}
-                  key={item.name}
-                  to={item.href}
-                  className="text-sm font-semibold leading-6 text-gray-900">
-                  {item.name}
-                </Link>
-              ))}
+              navigationES.map((item) =>
+                pathname === "/" && item.name === "Casa" ? (
+                  <NavLink
+                    onClick={scrollToDifferentSections}
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-white">
+                    {item.name}
+                  </NavLink>
+                ) : (
+                    <Link
+                      onClick={scrollToDifferentSections}
+                      key={item.name}
+                      to={item.href}
+                      className="text-sm font-semibold leading-6 text-white">
+                      {item.name}
+                    </Link>
+                  ) &&
+                  pathname === "/employer" &&
+                  item.name === "Para empleadores" ? (
+                  <NavLink
+                    onClick={scrollToDifferentSections}
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-white">
+                    {item.name}
+                  </NavLink>
+                ) : (
+                    <Link
+                      onClick={scrollToDifferentSections}
+                      key={item.name}
+                      to={item.href}
+                      className="text-sm font-semibold leading-6 text-white">
+                      {item.name}
+                    </Link>
+                  ) &&
+                  pathname === "/employees" &&
+                  item.name === "Para los trabajadores" ? (
+                  <NavLink
+                    onClick={scrollToDifferentSections}
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-white">
+                    {item.name}
+                  </NavLink>
+                ) : (
+                  <Link
+                    onClick={scrollToDifferentSections}
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-white">
+                    {item.name}
+                  </Link>
+                )
+              )}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-2">
             {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
