@@ -1,10 +1,12 @@
 export const employerDataDE = {
-  heading: "TalentToGo: Wir finden die Fachkräfte, die Sie dringend benötigen",
+  heading: "TalentToGo",
+  subheading: "Wir finden die Fachkräfte, die Sie dringend benötigen",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
 }
 
 export const employerDataES = {
-  heading: "TalentToGo: Encontramos los trabajadores cualificados que necesita con urgencia",
+  heading: "TalentToGo",
+  subheading: "Encontramos los trabajadores cualificados que necesita con urgencia",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
 }
 

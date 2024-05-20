@@ -342,7 +342,7 @@ export default function HeroVideo({
       </header>
 
       {/* Hero Section */}
-      <div className={`lg:min-h-screen relative isolate pt-14`}>
+      <div className={`min-h-screen relative isolate flex items-center justify-center`}>
         <video
           ref={videoRef}
           className="w-full h-full object-cover absolute top-0 left-0"
@@ -365,18 +365,23 @@ export default function HeroVideo({
         </div> */}
 
         {language === "DE" && (
-          <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56 relative">
-            <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:leading-[1.1]">
+          <div className="mx-auto max-w-4xl relative">
+            <div className="text-center px-6">
+              <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white lg:leading-[1.1] mb-2">
                 {pathname === "/" && homeDataHeroDE.heading}
                 {pathname === "/employer" && employerDataDE.heading}
                 {pathname === "/employees" && employeesDataDE.heading}
               </h1>
-              <p className="mt-6 text-lg leading-8 text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-white  lg:leading-[1.3] max-w-2xl mx-auto">
+                {pathname === "/" && homeDataHeroDE.subheading}
+                {pathname === "/employer" && employerDataDE.subheading}
+                {pathname === "/employees" && employeesDataDE.subheading}
+              </h2>
+              {/* <p className="mt-6 text-lg leading-8 text-white max-w-2xl mx-auto">
                 {pathname === "/" && homeDataHeroDE.text}
                 {pathname === "/employer" && employerDataDE.text}
                 {pathname === "/employees" && employeesDataDE.text}
-              </p>
+              </p> */}
               {pathname === "/" && (
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
@@ -396,18 +401,23 @@ export default function HeroVideo({
         )}
 
         {language === "ES" && (
-          <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56 relative">
-            <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:leading-[1.1]">
+          <div className="mx-auto max-w-4xl relative">
+            <div className="text-center px-6">
+              <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white lg:leading-[1.1] mb-2">
                 {pathname === "/" && homeDataHeroES.heading}
                 {pathname === "/employer" && employerDataES.heading}
                 {pathname === "/employees" && employeesDataES.heading}
               </h1>
-              <p className="mt-6 text-lg leading-8 text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-white  lg:leading-[1.3] max-w-2xl mx-auto">
+                {pathname === "/" && homeDataHeroES.subheading}
+                {pathname === "/employer" && employerDataES.subheading}
+                {pathname === "/employees" && employeesDataES.subheading}
+              </h2>
+              {/* <p className="mt-6 text-lg leading-8 text-white">
                 {pathname === "/" && homeDataHeroES.text}
                 {pathname === "/employer" && employerDataES.text}
                 {pathname === "/employees" && employeesDataES.text}
-              </p>
+              </p> */}
               {pathname === "/" && (
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
