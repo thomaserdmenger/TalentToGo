@@ -21,24 +21,22 @@ export const homeDataHeroES = {
 
 export const homeDataProcessDE = {
   heading: "Informationen zum Ablauf",
-  text: "Unsere patentierte, gepolsterte Snackhülle schützt Ihre Lieblingsleckereien davor, bei ganztägigen Abenteuern, langen Arbeitsschichten und anstrengenden Reisen zerquetscht zu werden.",
+  text: "Unser Prozess der Vermittlung von Arbeitskräften ist darauf ausgerichtet, Ihnen qualifiziertes und motiviertes Personal bereitzustellen. Wir übernehmen für Sie die komplette Abwicklung von der Auswahl geeigneter Kandidaten bis hin zur Integration am neuen Arbeitsplatz. Unser Ziel ist es, eine Win-Win-Situation zu schaffen: Fachkräfte erhalten spannende Möglichkeiten im deutschen Arbeitsmarkt und deutsche Unternehmen profitieren von ihrer Expertise und Arbeitskraft.",
   headingImgOne: "Für Arbeitgeber",
   headingImgTwo: "Für Arbeitnehmer",
   textImgOne:
-    "Das 20-Liter-Modell bietet Platz für 370 Schokoriegel, 6 Zylinder Chips, 1220 Standard-Gummibälle oder jede Kombination von Leckereien für unterwegs, die das Herz begehrt. Ja, wir haben nachgerechnet.",
-  textImgTwo:
-    "Mit mehreren Fächern können Sie Ihre Snacks besser organisieren. Die schnell zugängliche Aufbewahrungstasche ist selbst für die unerwartetsten Snack-Attacken und den Bedarf an gemeinsamer Nutzung bereit.",
+    "Finden Sie detaillierte Informationen zum Ablauf und weiteren Fragen rund um die Vermittlung.",
+  textImgTwo: "Erfahren Sie mehr über die Chancen, Voraussetzungen und den Bewerbungsprozess.",
 }
 
 export const homeDataProcessES = {
   heading: "Información sobre el proceso",
-  text: "Nuestra funda de bocadillos acolchada patentada protege tus golosinas favoritas de ser aplastadas durante aventuras de todo el día, largas jornadas de trabajo y viajes agotadores.",
+  text: "Nuestro proceso de colocación de fuerza laboral está diseñado para brindarle personal calificado y motivado. Nos encargamos de todo el proceso por usted, desde la selección de los candidatos adecuados hasta su integración en el nuevo lugar de trabajo. Nuestro objetivo es crear una situación en la que todos salgan ganando: los trabajadores cualificados reciben interesantes oportunidades en el mercado laboral alemán y las empresas alemanas se benefician de su experiencia y su mano de obra.",
   headingImgOne: "Para empleadores",
   headingImgTwo: "Para los trabajadores",
-  textImgOne:
-    "El modelo de 20 litros tiene espacio para 370 barras de chocolate, 6 cilindros de papas fritas, 1220 pelotas de goma estándar o cualquier combinación de golosinas para llevar que el corazón desee. Sí, lo hemos calculado.",
+  textImgOne: "Encuentra información detallada sobre el proceso y otras dudas sobre la colocación.",
   textImgTwo:
-    "Con varias secciones, puedes organizar tus bocadillos de manera más eficiente. La bolsa de almacenamiento de fácil acceso está lista incluso para los ataques de bocadillos más inesperados y para compartir con los demás.",
+    "Obtenga más información sobre las oportunidades, requisitos y el proceso de solicitud.",
 }
 
 export const homeDataServiceDE = {

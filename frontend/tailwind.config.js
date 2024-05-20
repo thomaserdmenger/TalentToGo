@@ -9,6 +9,8 @@ export default {
         "hero-home": "url('/images/Hero_Home.jpg')",
         "hero-employers": "url('/images/Hero_Employer.jpg')",
         "hero-employees": "url('/images/Hero_Employees.jpg')",
+        "process-employers": "url('/images/Process_Employer.jpg')",
+        "process-employees": "url('/images/Process_Employee.jpg')",
       },
       textShadow: {
         sm: "1px 1px 2px rgba(0, 0, 0, 0.5)",
