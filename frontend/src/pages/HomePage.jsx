@@ -42,7 +42,7 @@ const HomePage = () => {
                         className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         {homeDataProcessDE.heading}
                       </h2>
-                      <p className="mt-3 max-w-3xl text-lg text-gray-600">
+                      <p className="mt-3 max-w-5xl px-4 text-lg text-gray-600">
                         {homeDataProcessDE.text}
                       </p>
                     </div>
@@ -50,12 +50,12 @@ const HomePage = () => {
                     <div className="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
                       <Link to="/employer">
                         <div>
-                          <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg">
-                            <img
+                          <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg bg-process-employers bg-cover bg-no-repeat">
+                            {/* <img
                               src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg"
                               alt="Drawstring top with elastic loop closure and textured interior padding."
                               className="h-full w-full object-cover object-center"
-                            />
+                            /> */}
                           </div>
                           <h2 className="mt-8 font-bold text-lg">
                             {homeDataProcessDE.headingImgOne}
@@ -67,12 +67,12 @@ const HomePage = () => {
                       </Link>
                       <Link to="/employees">
                         <div>
-                          <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg">
-                            <img
+                          <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg bg-process-employees bg-cover bg-no-repeat">
+                            {/* <img
                               src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-02.jpg"
                               alt="Front zipper pouch with included key ring."
                               className="h-full w-full object-cover object-center"
-                            />
+                            /> */}
                           </div>
                           <h2 className="mt-8 font-bold text-lg">
                             {homeDataProcessDE.headingImgTwo}
@@ -94,7 +94,7 @@ const HomePage = () => {
                         className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         {homeDataProcessES.heading}
                       </h2>
-                      <p className="mt-3 max-w-3xl text-lg text-gray-600">
+                      <p className="mt-3 max-w-5xl px-4 text-lg text-gray-600">
                         {homeDataProcessES.text}
                       </p>
                     </div>
@@ -102,12 +102,12 @@ const HomePage = () => {
                     <div className="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
                       <Link to="/employer">
                         <div>
-                          <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg">
-                            <img
+                          <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg bg-process-employers bg-cover bg-no-repeat">
+                            {/* <img
                               src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg"
                               alt="Drawstring top with elastic loop closure and textured interior padding."
                               className="h-full w-full object-cover object-center"
-                            />
+                            /> */}
                           </div>
                           <h2 className="mt-8 font-bold text-lg">
                             {homeDataProcessES.headingImgOne}
@@ -119,12 +119,12 @@ const HomePage = () => {
                       </Link>
                       <Link to="/employees">
                         <div>
-                          <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg">
-                            <img
+                          <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg bg-process-employees bg-cover bg-no-repeat">
+                            {/* <img
                               src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-02.jpg"
                               alt="Front zipper pouch with included key ring."
                               className="h-full w-full object-cover object-center"
-                            />
+                            /> */}
                           </div>
                           <h2 className="mt-8 font-bold text-lg">
                             {homeDataProcessES.headingImgTwo}
