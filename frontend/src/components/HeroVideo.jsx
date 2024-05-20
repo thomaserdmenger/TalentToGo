@@ -270,15 +270,16 @@ export default function HeroVideo({
             }}
           />
         </div> */}
-        {/* {language === "DE" && (
-          <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
+
+        {language === "DE" && (
+          <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56 relative">
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl text-shadow-sm lg:leading-[1.1]">
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:leading-[1.1]">
                 {pathname === "/" && homeDataHeroDE.heading}
                 {pathname === "/employer" && employerDataDE.heading}
                 {pathname === "/employees" && employeesDataDE.heading}
               </h1>
-              <p className="mt-6 text-lg leading-8 text-white text-shadow-sm">
+              <p className="mt-6 text-lg leading-8 text-white">
                 {pathname === "/" && homeDataHeroDE.text}
                 {pathname === "/employer" && employerDataDE.text}
                 {pathname === "/employees" && employeesDataDE.text}
@@ -287,29 +288,29 @@ export default function HeroVideo({
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
                     to="/employer"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                     {homeDataHeroDE.buttonEmployers}
                   </Link>
                   <Link
                     to="/employees"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                     {homeDataHeroDE.buttonEmployees}
                   </Link>
                 </div>
               )}
             </div>
           </div>
-        )} */}
+        )}
 
-        {/* {language === "ES" && (
-          <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
+        {language === "ES" && (
+          <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56 relative">
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white text-shadow sm:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:leading-[1.1]">
                 {pathname === "/" && homeDataHeroES.heading}
                 {pathname === "/employer" && employerDataES.heading}
                 {pathname === "/employees" && employeesDataES.heading}
               </h1>
-              <p className="mt-6 text-lg leading-8 text-white text-shadow-lg font-medium">
+              <p className="mt-6 text-lg leading-8 text-white">
                 {pathname === "/" && homeDataHeroES.text}
                 {pathname === "/employer" && employerDataES.text}
                 {pathname === "/employees" && employeesDataES.text}
@@ -318,19 +319,19 @@ export default function HeroVideo({
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
                     to="/employer"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                     {homeDataHeroES.buttonEmployers}
                   </Link>
                   <Link
                     to="/employees"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                     {homeDataHeroES.buttonEmployees}
                   </Link>
                 </div>
               )}
             </div>
           </div>
-        )} */}
+        )}
 
         {/* Hintergrundeffekt unten rechts */}
         {/* <div
