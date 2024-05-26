@@ -112,16 +112,21 @@ export const aboutUsDE = {
     {
       fullname: "Katharina Wenzel",
       role: "Rolle von Katharina",
-      imageUrl:
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      imageUrl: "/images/Profil_1.png",
       xUrl: "#",
       linkedinUrl: "#",
     },
     {
-      fullname: "Katharinas Mitstreiterin",
-      role: "Rolle von Mitstreiterin",
-      imageUrl:
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      fullname: "Marta Barros",
+      role: "Headhunterin",
+      imageUrl: "/images/Profil_2.png",
+      xUrl: "#",
+      linkedinUrl: "#",
+    },
+    {
+      fullname: "Lourdes Martínez",
+      role: "Headhunterin",
+      imageUrl: "/images/Profil_3.png",
       xUrl: "#",
       linkedinUrl: "#",
     },
@@ -134,17 +139,22 @@ export const aboutUsES = {
   people: [
     {
       fullname: "Katharina Wenzel",
-      role: "Katharina role",
-      imageUrl:
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      role: "Papel de Catalina",
+      imageUrl: "/images/Profil_1.png",
       xUrl: "#",
       linkedinUrl: "#",
     },
     {
-      fullname: "Katharinas friends",
-      role: "Friends role",
-      imageUrl:
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      fullname: "Marta Barros",
+      role: "Cazatalentos",
+      imageUrl: "/images/Profil_2.png",
+      xUrl: "#",
+      linkedinUrl: "#",
+    },
+    {
+      fullname: "Lourdes Martínez",
+      role: "Cazatalentos",
+      imageUrl: "/images/Profil_3.png",
       xUrl: "#",
       linkedinUrl: "#",
     },
