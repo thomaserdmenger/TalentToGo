@@ -12,9 +12,10 @@ const App = () => {
     <languageContext.Provider value={{ language, setLanguage }}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route index element={<HomePage />} /> {/* Äquivalent für path="/" */}
           <Route path="/employer" element={<EmployerPage />} />
           <Route path="/employees" element={<EmployeesPage />} />
+          {/* <Route path="*" element={<p>There's nothing here: 404!</p>} /> Für alle No Match Routes */}
         </Routes>
       </BrowserRouter>
     </languageContext.Provider>
