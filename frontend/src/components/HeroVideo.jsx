@@ -1,12 +1,12 @@
-import { useContext, useState, useRef, useEffect } from "react"
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom"
-import { languageContext } from "../Context/Context"
-import LanguageSelect from "./LanguageSelect"
-import { Dialog } from "@headlessui/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
-import { FaSquareFacebook } from "react-icons/fa6"
-import { FaSquareInstagram } from "react-icons/fa6"
-import { FaSquareWhatsapp } from "react-icons/fa6"
+import { useContext, useState, useRef, useEffect } from "react";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { languageContext } from "../Context/Context";
+import LanguageSelect from "./LanguageSelect";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 
 export default function HeroVideo({
   homeDataHeroDE,
@@ -18,101 +18,101 @@ export default function HeroVideo({
   employeesDataDE,
   employeesDataES,
 }) {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { language } = useContext(languageContext)
-  const { pathname } = useLocation()
-  const videoRef = useRef(null)
-  const navigate = useNavigate()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { language } = useContext(languageContext);
+  const { pathname } = useLocation();
+  const videoRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5
+      videoRef.current.playbackRate = 0.5;
     }
-  }, [])
+  }, []);
 
   const scrollToDifferentSections = (e) => {
     // Conditionals for About Us
     if (e.target.textContent === "Über uns" && pathname === "/") {
-      const aboutUsSection = document.querySelector("#aboutUs")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#aboutUs");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Sobre nosotros" && pathname === "/") {
-      const aboutUsSection = document.querySelector("#aboutUs")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#aboutUs");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (pathname === "/employer" && e.target.textContent === "Über uns") {
       setTimeout(() => {
-        navigate("/")
+        navigate("/");
         setTimeout(() => {
-          const aboutUsSection = document.querySelector("#aboutUs")
-          aboutUsSection.scrollIntoView({ behavior: "smooth" })
-        }, 20)
-      }, 50)
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
     }
 
     if (pathname === "/employer" && e.target.textContent === "Sobre nosotros") {
       setTimeout(() => {
-        navigate("/")
+        navigate("/");
         setTimeout(() => {
-          const aboutUsSection = document.querySelector("#aboutUs")
-          aboutUsSection.scrollIntoView({ behavior: "smooth" })
-        }, 20)
-      }, 50)
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
     }
 
     if (pathname === "/employees" && e.target.textContent === "Über uns") {
       setTimeout(() => {
-        navigate("/")
+        navigate("/");
         setTimeout(() => {
-          const aboutUsSection = document.querySelector("#aboutUs")
-          aboutUsSection.scrollIntoView({ behavior: "smooth" })
-        }, 20)
-      }, 50)
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
     }
 
     if (pathname === "/employees" && e.target.textContent === "Sobre nosotros") {
       setTimeout(() => {
-        navigate("/")
+        navigate("/");
         setTimeout(() => {
-          const aboutUsSection = document.querySelector("#aboutUs")
-          aboutUsSection.scrollIntoView({ behavior: "smooth" })
-        }, 20)
-      }, 50)
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
     }
 
     // Conditionals for Contact Sections
     if (e.target.textContent === "Kontakt" && pathname === "/") {
-      const aboutUsSection = document.querySelector("#contactHome")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactHome");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Contacto" && pathname === "/") {
-      const aboutUsSection = document.querySelector("#contactHome")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactHome");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Kontakt" && pathname === "/employer") {
-      const aboutUsSection = document.querySelector("#contactEmployers")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactEmployers");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Contacto" && pathname === "/employer") {
-      const aboutUsSection = document.querySelector("#contactEmployers")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactEmployers");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Kontakt" && pathname === "/employees") {
-      const aboutUsSection = document.querySelector("#contactEmployees")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactEmployees");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Contacto" && pathname === "/employees") {
-      const aboutUsSection = document.querySelector("#contactEmployees")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactEmployees");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <div className="bg-white">
@@ -124,8 +124,8 @@ export default function HeroVideo({
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Talent To Go</span>
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="w-auto h-[60px] mt-2"
+                src="../../public/images/Logo_ohne_text.png"
                 alt=""
               />
             </a>
@@ -268,7 +268,7 @@ export default function HeroVideo({
               <FaSquareWhatsapp size={20} />
             </a>
           </div>
-          <div className="fixed top-16 right-8">
+          <div className="fixed top-20 right-6 md:right-8">
             <LanguageSelect />
           </div>
         </nav>
@@ -281,8 +281,8 @@ export default function HeroVideo({
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  className="w-auto h-[50px]"
+                  src="../../public/images/Logo_mit_Text.png"
                   alt=""
                 />
               </a>
@@ -450,5 +450,5 @@ export default function HeroVideo({
         </div> */}
       </div>
     </div>
-  )
+  );
 }

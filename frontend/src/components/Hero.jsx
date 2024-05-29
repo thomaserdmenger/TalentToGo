@@ -1,12 +1,12 @@
-import { useContext, useState } from "react"
-import { Link, useLocation, useNavigate } from "react-router-dom"
-import { languageContext } from "../Context/Context"
-import LanguageSelect from "./LanguageSelect"
-import { Dialog } from "@headlessui/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
-import { FaSquareFacebook } from "react-icons/fa6"
-import { FaSquareInstagram } from "react-icons/fa6"
-import { FaSquareWhatsapp } from "react-icons/fa6"
+import { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { languageContext } from "../Context/Context";
+import LanguageSelect from "./LanguageSelect";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 
 export default function Hero({
   homeDataHeroDE,
@@ -18,94 +18,94 @@ export default function Hero({
   employeesDataDE,
   employeesDataES,
 }) {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { language } = useContext(languageContext)
-  const { pathname } = useLocation()
-  const navigate = useNavigate()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { language } = useContext(languageContext);
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   const scrollToDifferentSections = (e) => {
     // Conditionals for About Us
     if (e.target.textContent === "Über uns" && pathname === "/") {
-      const aboutUsSection = document.querySelector("#aboutUs")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#aboutUs");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Sobre nosotros" && pathname === "/") {
-      const aboutUsSection = document.querySelector("#aboutUs")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#aboutUs");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (pathname === "/employer" && e.target.textContent === "Über uns") {
       setTimeout(() => {
-        navigate("/")
+        navigate("/");
         setTimeout(() => {
-          const aboutUsSection = document.querySelector("#aboutUs")
-          aboutUsSection.scrollIntoView({ behavior: "smooth" })
-        }, 20)
-      }, 50)
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
     }
 
     if (pathname === "/employer" && e.target.textContent === "Sobre nosotros") {
       setTimeout(() => {
-        navigate("/")
+        navigate("/");
         setTimeout(() => {
-          const aboutUsSection = document.querySelector("#aboutUs")
-          aboutUsSection.scrollIntoView({ behavior: "smooth" })
-        }, 20)
-      }, 50)
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
     }
 
     if (pathname === "/employees" && e.target.textContent === "Über uns") {
       setTimeout(() => {
-        navigate("/")
+        navigate("/");
         setTimeout(() => {
-          const aboutUsSection = document.querySelector("#aboutUs")
-          aboutUsSection.scrollIntoView({ behavior: "smooth" })
-        }, 20)
-      }, 50)
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
     }
 
     if (pathname === "/employees" && e.target.textContent === "Sobre nosotros") {
       setTimeout(() => {
-        navigate("/")
+        navigate("/");
         setTimeout(() => {
-          const aboutUsSection = document.querySelector("#aboutUs")
-          aboutUsSection.scrollIntoView({ behavior: "smooth" })
-        }, 20)
-      }, 50)
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
     }
 
     // Conditionals for Contact Sections
     if (e.target.textContent === "Kontakt" && pathname === "/") {
-      const aboutUsSection = document.querySelector("#contactHome")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactHome");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Contacto" && pathname === "/") {
-      const aboutUsSection = document.querySelector("#contactHome")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactHome");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Kontakt" && pathname === "/employer") {
-      const aboutUsSection = document.querySelector("#contactEmployers")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactEmployers");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Contacto" && pathname === "/employer") {
-      const aboutUsSection = document.querySelector("#contactEmployers")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactEmployers");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Kontakt" && pathname === "/employees") {
-      const aboutUsSection = document.querySelector("#contactEmployees")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactEmployees");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
 
     if (e.target.textContent === "Contacto" && pathname === "/employees") {
-      const aboutUsSection = document.querySelector("#contactEmployees")
-      aboutUsSection.scrollIntoView({ behavior: "smooth" })
+      const aboutUsSection = document.querySelector("#contactEmployees");
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <div className="bg-white">
@@ -115,12 +115,8 @@ export default function Hero({
         <nav className="flex items-center justify-between p-6 lg:px-8 relative" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Talent To Go</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              {/* <span className="sr-only">TalentToGo</span> */}
+              {/* Logo here */}
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -178,13 +174,9 @@ export default function Hero({
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+              <a href="#" className="-m-1.5 p-1.5 ">
+                {/* <span className="sr-only">Your Company</span> */}
+                {/* Logo here */}
               </a>
               <button
                 type="button"
@@ -336,5 +328,5 @@ export default function Hero({
         </div> */}
       </div>
     </div>
-  )
+  );
 }
