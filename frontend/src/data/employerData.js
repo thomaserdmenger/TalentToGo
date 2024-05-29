@@ -2,13 +2,13 @@ export const employerDataDE = {
   heading: "TalentToGo",
   subheading: "Wir finden die Fachkräfte, die Sie dringend benötigen",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
-}
+};
 
 export const employerDataES = {
   heading: "TalentToGo",
   subheading: "Encontramos los trabajadores cualificados que necesita con urgencia",
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
-}
+};
 
 export const employerPlacementDE = {
   features: [
@@ -55,10 +55,14 @@ export const employerPlacementDE = {
         "Nach bestandener Anerkennung bleibt die Fachkraft gemäß Vereinbarung im Arbeitsvertrag für zwei Jahre im Unternehmen, um Sie zu unterstützen.",
     },
   ],
-  slogan: "Slogan oder Call to Action",
-  heading: "Prozess der Fachkräftevermittlung",
-  text: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-}
+  slogan: "Jetzt hochqualifiziertes Fachpersonal finden!",
+  heading: "Qualifiziertes Fachpersonal aus Mexiko für Ihr Unternehmen",
+  text: [
+    "Suchen Sie nach hochqualifiziertem Fachpersonal, das nicht nur über exzellente Fachkenntnisse verfügt, sondern auch mit Leidenschaft und Herz arbeitet? Unsere Dienstleistung bietet die perfekte Lösung. Wir sind spezialisiert auf die Anwerbung und Vermittlung von talentierten Fachkräften aus Mexiko für Arbeitgeber in Deutschland.",
+    "Unser Team wählt sorgfältig die Kandidaten aus, die Ihre Anforderungen am besten erfüllen, und unterstützt Sie während des gesamten Prozesses, um sicherzustellen, dass Sie das bestmögliche Personal für Ihr Team erhalten. Mit unseren Fachkräften aus Mexiko können Sie nicht nur die Qualität Ihrer Angebote verbessern, sondern auch die kulturelle Vielfalt in Ihrem Team fördern.",
+    "Kontaktieren Sie uns noch heute, um mehr über unsere Dienstleistungen zu erfahren und herauszufinden, wie wir Ihnen helfen können, das richtige qualifizierte Fachpersonal für Ihr Unternehmen zu finden.",
+  ],
+};
 
 export const employerPlacementES = {
   features: [
@@ -105,10 +109,14 @@ export const employerPlacementES = {
         "Tras el reconocimiento exitoso, el especialista permanecerá en la empresa durante dos años según lo acordado en el contrato de trabajo para ayudarle.",
     },
   ],
-  slogan: "Slogan or Call to Action",
-  heading: "Proceso de colocación de trabajadores calificados",
-  text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-}
+  slogan: "¡Encuentre personal altamente calificado ahora!",
+  heading: "Personal calificado de México para su empresa",
+  text: [
+    "¿Está buscando personal altamente calificado que no solo posea excelentes conocimientos técnicos, sino que también trabaje con pasión y corazón? Nuestro servicio ofrece la solución perfecta. Estamos especializados en el reclutamiento y colocación de talentos de México para empleadores en Alemania.",
+    "Nuestro equipo selecciona cuidadosamente a los candidatos que mejor cumplen con sus requisitos y lo apoya durante todo el proceso para asegurar que obtenga el mejor personal posible para su equipo. Con nuestro personal de México, no solo puede mejorar la calidad de sus ofertas, sino también promover la diversidad cultural en su equipo.",
+    "Contáctenos hoy mismo para obtener más información sobre nuestros servicios y descubrir cómo podemos ayudarlo a encontrar el personal calificado adecuado para su empresa.",
+  ],
+};
 
 export const employerFaqDE = {
   faqs: [
@@ -146,7 +154,7 @@ export const employerFaqDE = {
     },
   ],
   heading: "Häufig gestelle Fragen",
-}
+};
 
 export const employerFaqES = {
   faqs: [
@@ -183,4 +191,4 @@ export const employerFaqES = {
     },
   ],
   heading: "Preguntas frecuentes",
-}
+};

@@ -1,24 +1,24 @@
-import { Disclosure } from "@headlessui/react"
-import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline"
-import { useContext } from "react"
-import { CheckIcon } from "@heroicons/react/20/solid"
-import { languageContext } from "../Context/Context.jsx"
-import Footer from "../components/Footer.jsx"
-import Hero from "../components/Hero"
-import { employerDataDE, employerDataES } from "../data/employerData.js"
-import { homeDataHeroDE, homeDataHeroES } from "../data/homeData.js"
-import { navigationDE, navigationES } from "../data/navigation.js"
+import { Disclosure } from "@headlessui/react";
+import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+import { useContext } from "react";
+import { CheckIcon } from "@heroicons/react/20/solid";
+import { languageContext } from "../Context/Context.jsx";
+import Footer from "../components/Footer.jsx";
+import Hero from "../components/Hero";
+import { employerDataDE, employerDataES } from "../data/employerData.js";
+import { homeDataHeroDE, homeDataHeroES } from "../data/homeData.js";
+import { navigationDE, navigationES } from "../data/navigation.js";
 import {
   employerPlacementDE,
   employerPlacementES,
   employerFaqDE,
   employerFaqES,
-} from "../data/employerData.js"
-import ContactForm from "../components/ContactForm.jsx"
-import HeroVideo from "../components/HeroVideo.jsx"
+} from "../data/employerData.js";
+import ContactForm from "../components/ContactForm.jsx";
+import HeroVideo from "../components/HeroVideo.jsx";
 
 const EmployerPage = () => {
-  const { language } = useContext(languageContext)
+  const { language } = useContext(languageContext);
 
   return (
     <>
@@ -47,9 +47,18 @@ const EmployerPage = () => {
                       <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         {employerPlacementDE.heading}
                       </p>
-                      <p className="mt-6 text-base leading-7 text-gray-600">
+                      {/* <p className="mt-6 text-base leading-7 text-gray-600">
                         {employerPlacementDE.text}
-                      </p>
+                      </p> */}
+                      {employerPlacementDE.text.map((text, index) => {
+                        return (
+                          <p
+                            className="mt-6 text-lg leading-8 text-gray-600 px-6 max-w-[1250px] mx-auto"
+                            key={index}>
+                            {text}
+                          </p>
+                        );
+                      })}
                     </div>
                     <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
                       {employerPlacementDE.features.map((feature) => (
@@ -77,9 +86,17 @@ const EmployerPage = () => {
                       <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         {employerPlacementES.heading}
                       </p>
-                      <p className="mt-6 text-base leading-7 text-gray-600">
-                        {employerPlacementES.text}
-                      </p>
+
+                      {/* {employerPlacementES.text} */}
+                      {employerPlacementES.text.map((text, index) => {
+                        return (
+                          <p
+                            className="mt-6 text-lg leading-8 text-gray-600 px-6 max-w-[1250px] mx-auto"
+                            key={index}>
+                            {text}
+                          </p>
+                        );
+                      })}
                     </div>
                     <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
                       {employerPlacementES.features.map((feature) => (
@@ -182,7 +199,7 @@ const EmployerPage = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default EmployerPage
+export default EmployerPage;
