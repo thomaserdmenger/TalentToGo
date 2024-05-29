@@ -53,7 +53,7 @@ export const formDataDE = {
   },
   submit: "Abschicken",
   cancel: "Abbrechen",
-}
+};
 
 export const formDataES = {
   heading: "Póngase en contacto",
@@ -75,12 +75,12 @@ export const formDataES = {
   },
   phone: {
     title: "Teléfono",
-    placeholder: "+34 612 345 678",
+    placeholder: "+52 612 345 678",
     required: true,
   },
   street: {
     title: "Calle y número",
-    placeholder: "Calle Falsa 123",
+    placeholder: "Calle 123",
     required: false,
   },
   zip: {
@@ -110,4 +110,4 @@ export const formDataES = {
   },
   submit: "Enviar",
   cancel: "Cancelar",
-}
+};
