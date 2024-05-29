@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom"
-import { useContext } from "react"
-import { languageContext } from "../Context/Context.jsx"
-import Hero from "../components/Hero"
-import Footer from "../components/Footer.jsx"
-import { homeDataHeroDE, homeDataHeroES } from "../data/homeData.js"
-import { navigationDE, navigationES } from "../data/navigation.js"
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { languageContext } from "../Context/Context.jsx";
+import Footer from "../components/Footer.jsx";
+import { homeDataHeroDE, homeDataHeroES } from "../data/homeData.js";
+import { navigationDE, navigationES } from "../data/navigation.js";
 import {
   homeDataProcessDE,
   homeDataProcessES,
@@ -12,12 +11,17 @@ import {
   homeDataServiceES,
   aboutUsDE,
   aboutUsES,
-} from "../data/homeData.js"
-import ContactForm from "../components/ContactForm.jsx"
-import HeroVideo from "../components/HeroVideo.jsx"
+} from "../data/homeData.js";
+import ContactForm from "../components/ContactForm.jsx";
+import HeroVideo from "../components/HeroVideo.jsx";
+import { HiOutlineUsers } from "react-icons/hi2";
+import { HiOutlineChatBubbleOvalLeftEllipsis } from "react-icons/hi2";
+import { LiaHandsHelpingSolid } from "react-icons/lia";
+import { IoTimeOutline } from "react-icons/io5";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
 
 const HomePage = () => {
-  const { language } = useContext(languageContext)
+  const { language } = useContext(languageContext);
 
   return (
     <>
@@ -154,14 +158,25 @@ const HomePage = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               {language === "DE" && (
                 <>
-                  <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-indigo-600">
+                  <div className="mx-auto max-w-7xl text-center">
+                    <h3 className="text-base font-semibold leading-7 text-center px-8 text-indigo-600">
                       {homeDataServiceDE.slogan}
-                    </h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    </h3>
+                    <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 text-center px-6 sm:text-4xl">
                       {homeDataServiceDE.heading}
-                    </p>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">{homeDataServiceDE.text}</p>
+                    </h2>
+
+                    {homeDataServiceDE.text.map((item, index) => {
+                      return (
+                        <p
+                          key={index}
+                          className="mt-6 text-lg leading-8 text-gray-600 px-6 max-w-[1100px] mx-auto">
+                          {item}
+                        </p>
+                      );
+                    })}
+
+                    {/* <p className="mt-6 text-lg leading-8 text-gray-600">{homeDataServiceDE.text}</p> */}
                   </div>
                   <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -169,7 +184,31 @@ const HomePage = () => {
                         <div key={feature.name} className="relative pl-16">
                           <dt className="text-base font-semibold leading-7 text-gray-900">
                             <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                              <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                              {/* <feature.icon className="h-6 w-6 text-white" aria-hidden="true" /> */}
+                              {feature.icon === "serviceOne" && (
+                                <HiOutlineUsers className="h-6 w-6 text-white" aria-hidden="true" />
+                              )}
+                              {feature.icon === "serviceTwo" && (
+                                <HiOutlineChatBubbleOvalLeftEllipsis
+                                  className="h-6 w-6 text-white"
+                                  aria-hidden="true"
+                                />
+                              )}
+                              {feature.icon === "serviceThree" && (
+                                <LiaHandsHelpingSolid
+                                  className="h-6 w-6 text-white"
+                                  aria-hidden="true"
+                                />
+                              )}
+                              {feature.icon === "serviceFour" && (
+                                <IoTimeOutline className="h-6 w-6 text-white" aria-hidden="true" />
+                              )}
+                              {feature.icon === "serviceFive" && (
+                                <VscWorkspaceTrusted
+                                  className="h-6 w-6 text-white"
+                                  aria-hidden="true"
+                                />
+                              )}
                             </div>
                             {feature.name}
                           </dt>
@@ -185,14 +224,22 @@ const HomePage = () => {
 
               {language === "ES" && (
                 <>
-                  <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-indigo-600">
+                  <div className="mx-auto max-w-7xl text-center">
+                    <h3 className="text-base font-semibold leading-7 text-center px-8 text-indigo-600">
                       {homeDataServiceES.slogan}
-                    </h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    </h3>
+                    <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 text-center px-6 sm:text-4xl">
                       {homeDataServiceES.heading}
-                    </p>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">{homeDataServiceES.text}</p>
+                    </h2>
+                    {homeDataServiceES.text.map((item, index) => {
+                      return (
+                        <p
+                          key={index}
+                          className="mt-6 text-lg leading-8 text-gray-600 px-6 max-w-[1100px] mx-auto">
+                          {item}
+                        </p>
+                      );
+                    })}
                   </div>
                   <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -200,7 +247,32 @@ const HomePage = () => {
                         <div key={feature.name} className="relative pl-16">
                           <dt className="text-base font-semibold leading-7 text-gray-900">
                             <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                              <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                              {/* <feature.icon className="h-6 w-6 text-white" aria-hidden="true" /> */}
+
+                              {feature.icon === "serviceOne" && (
+                                <HiOutlineUsers className="h-6 w-6 text-white" aria-hidden="true" />
+                              )}
+                              {feature.icon === "serviceTwo" && (
+                                <HiOutlineChatBubbleOvalLeftEllipsis
+                                  className="h-6 w-6 text-white"
+                                  aria-hidden="true"
+                                />
+                              )}
+                              {feature.icon === "serviceThree" && (
+                                <LiaHandsHelpingSolid
+                                  className="h-6 w-6 text-white"
+                                  aria-hidden="true"
+                                />
+                              )}
+                              {feature.icon === "serviceFour" && (
+                                <IoTimeOutline className="h-6 w-6 text-white" aria-hidden="true" />
+                              )}
+                              {feature.icon === "serviceFive" && (
+                                <VscWorkspaceTrusted
+                                  className="h-6 w-6 text-white"
+                                  aria-hidden="true"
+                                />
+                              )}
                             </div>
                             {feature.name}
                           </dt>
@@ -351,7 +423,7 @@ const HomePage = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
