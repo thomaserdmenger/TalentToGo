@@ -3,7 +3,7 @@ import {
   CloudArrowUpIcon,
   FingerPrintIcon,
   LockClosedIcon,
-} from "@heroicons/react/24/outline"
+} from "@heroicons/react/24/outline";
 
 export const homeDataHeroDE = {
   heading: "TalentToGo",
@@ -11,7 +11,7 @@ export const homeDataHeroDE = {
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
   buttonEmployers: "Für Arbeitgeber",
   buttonEmployees: "Für Arbeitnehmer",
-}
+};
 
 export const homeDataHeroES = {
   heading: "TalentToGo",
@@ -19,7 +19,7 @@ export const homeDataHeroES = {
   text: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
   buttonEmployers: "Para empleadores",
   buttonEmployees: "Para los trabajadores",
-}
+};
 
 export const homeDataProcessDE = {
   heading: "Informationen zum Ablauf",
@@ -29,7 +29,7 @@ export const homeDataProcessDE = {
   textImgOne:
     "Finden Sie detaillierte Informationen zum Ablauf und weiteren Fragen rund um die Vermittlung.",
   textImgTwo: "Erfahren Sie mehr über die Chancen, Voraussetzungen und den Bewerbungsprozess.",
-}
+};
 
 export const homeDataProcessES = {
   heading: "Información sobre el proceso",
@@ -39,71 +39,91 @@ export const homeDataProcessES = {
   textImgOne: "Encuentra información detallada sobre el proceso y otras dudas sobre la colocación.",
   textImgTwo:
     "Obtenga más información sobre las oportunidades, requisitos y el proceso de solicitud.",
-}
+};
 
 export const homeDataServiceDE = {
-  slogan: "Slogan oder Call to action",
-  heading: "Alles, was Sie für die Bereitstellung Ihrer Anwendung benötigen",
-  text: "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+  slogan: "Kontaktieren Sie uns und sichern Sie sich die besten Talente!",
+  heading: "Überwinden Sie den Fachkräftemangel mit TalenToGo!",
+  text: [
+    "Der Fachkräftemangel in Deutschland stellt Arbeitgeber vor große Herausforderungen, insbesondere in den Bereichen Gesundheitswesen, Technologie und Bildung. Dieser Mangel führt oft zu Überlastung und Burnout bei den vorhandenen Mitarbeitern, die zusätzliche Verantwortung übernehmen müssen. Unternehmen verlieren dadurch Geschäftsmöglichkeiten, weil sie nicht die richtigen Mitarbeiter haben, um Projekte umzusetzen oder Kundenbedürfnisse zu erfüllen, was zu Einnahmeverlusten und einem Verlust des Wettbewerbsvorteils führt.",
+    "Zudem wird die Innovation behindert, da ohne die nötigen Experten keine neuen Technologien genutzt oder innovative Lösungen entwickelt werden können. Um diesen Problemen zu begegnen, sollten Arbeitgeber ihre Rekrutierungsstrategien überdenken und den Wert ihrer Mitarbeiter erkennen.",
+    "Die Zusammenarbeit mit TalentToGo kann helfen, den Fachkräftemangel zu bewältigen, da wir über das notwendige Fachwissen, Ressourcen und ein Netzwerk verfügen, um hochqualifizierte Talente zu finden und einzustellen. Eine Kooperation mit TalentToGo bietet Ihnen als Arbeitgeber zahlreiche Vorteile:",
+  ],
   features: [
     {
-      name: "Service 1",
+      name: "Breiter Talentpool",
       description:
-        "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-      icon: CloudArrowUpIcon,
+        "Zugang zu einem breiten Talentpool: Als Experten für die Rekrutierung aus Mexiko bieten wir Ihnen Zugang zu einem großen Pool hochqualifizierter Fachkräfte aus verschiedenen Branchen und Berufsfeldern. Wir unterstützen Arbeitgeber dabei, qualifizierte Kandidaten zu finden, die genau den gesuchten Anforderungen und Qualifikationen entsprechen.",
+      icon: "serviceOne",
     },
     {
-      name: "Service 2",
+      name: "Kulturelles Verständnis",
       description:
-        "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-      icon: LockClosedIcon,
+        "Verständnis für kulturelle und sprachliche Unterschiede: Durch unser internationales Team sowie unsere Erfahrung und unser Wissen über die mexikanische Kultur und Sprache hilft TalenToGo Arbeitgebern, potenzielle Missverständnisse zu vermeiden und eine reibungslose Integration der neuen Mitarbeiter zu gewährleisten. Dies ist besonders wichtig in multikulturellen Arbeitsumgebungen.",
+      icon: "serviceTwo",
     },
     {
-      name: "Service 3",
+      name: "Rechtliche und administrative Unterstützung",
       description:
-        "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-      icon: ArrowPathIcon,
+        "Unterstützung bei rechtlichen und administrativen Aspekten: Die internationale Rekrutierung kann mit rechtlichen und administrativen Herausforderungen verbunden sein. Mit unserem Expertenwissen in diesem Bereich unterstützen wir Arbeitgeber dabei, die erforderlichen Visa- und Arbeitsgenehmigungen zu erhalten und sicherzustellen, dass alle rechtlichen Anforderungen erfüllt sind.",
+      icon: "serviceThree",
     },
     {
-      name: "Service 4",
+      name: "Effiziente Rekrutierung",
       description:
-        "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
-      icon: FingerPrintIcon,
+        "Effiziente Rekrutierungsprozesse: Mit unserer Expertise unterstützen wir Arbeitgeber dabei, Zeit und Ressourcen zu sparen, indem TalenToGo effiziente Rekrutierungsprozesse implementiert. Von der Kandidatensuche über die Vorauswahl bis hin zur Organisation von Interviews und Verhandlungen begleitet TalenToGo Sie professionell und zielgerichtet durch den gesamten Prozess.",
+      icon: "serviceFour",
+    },
+    {
+      name: "Langfristige Partnerschaften",
+      description:
+        "Langfristige Partnerschaften aufbauen: Durch eine erfolgreiche Zusammenarbeit entstehen langfristige Partnerschaften und eine solide Vertrauensbasis, indem wir kontinuierlich qualifizierte Fachkräfte liefern und erstklassigen Service bieten. Mit unserem Engagement bekämpfen wir den Fachkräftemangel und helfen Ihnen, die besten Talente für die Anforderungen Ihres Unternehmens zu gewinnen und den Erfolg Ihres Teams zu fördern.",
+      icon: "serviceFive",
     },
   ],
-}
+};
 
 export const homeDataServiceES = {
-  slogan: "Eslogan o llamada a la acción",
-  heading: "Todo lo que necesitas para implementar tu aplicación",
-  text: "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+  slogan: "Póngase en contacto con nosotros y asegúrese el mejor talento",
+  heading: "¡Supere la escasez de cualificaciones con TalenToGo!",
+  text: [
+    "La escasez de mano de obra cualificada en Alemania plantea grandes retos a los empresarios, sobre todo en los ámbitos de la sanidad, la tecnología y la educación. Esta escasez suele provocar sobrecarga de trabajo y agotamiento entre los empleados existentes, que tienen que asumir responsabilidades adicionales. Las empresas pierden oportunidades de negocio por no contar con el personal adecuado para ejecutar proyectos o satisfacer las necesidades de los clientes, lo que se traduce en una pérdida de ingresos y de ventaja competitiva.",
+    "La innovación también se ve obstaculizada, ya que no se pueden utilizar las nuevas tecnologías ni desarrollar soluciones innovadoras sin los expertos necesarios. Para contrarrestar estos problemas, los empresarios deben replantearse sus estrategias de contratación y reconocer el valor de sus empleados.",
+    "Trabajar con TalentToGo puede ayudarle a superar la escasez de personal cualificado, ya que contamos con la experiencia, los recursos y la red necesarios para encontrar y contratar personal altamente cualificado. La cooperación con TalentToGo le ofrece numerosas ventajas como empleador:",
+  ],
   features: [
     {
-      name: "Service 1",
+      name: "Amplia Bolsa de Talento",
       description:
-        "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-      icon: CloudArrowUpIcon,
+        "Acceso a una amplia fuente de talento: Como expertos en reclutamiento desde México, le ofrecemos acceso a una gran fuente de especialistas altamente calificados de diversas industrias y campos profesionales. Apoyamos a los empleadores en la búsqueda de candidatos calificados que cumplan exactamente con los requisitos y calificaciones que están buscando.",
+      icon: "serviceOne",
     },
     {
-      name: "Service 2",
+      name: "Comprensión Cultural",
       description:
-        "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-      icon: LockClosedIcon,
+        "Comprensión de las diferencias culturales y lingüísticas: Gracias a nuestro equipo internacional y a nuestra experiencia y conocimiento de la cultura y el idioma mexicanos, TalenToGo ayuda a los empleadores a evitar posibles malentendidos y a garantizar una integración sin problemas de los nuevos empleados. Esto es especialmente importante en entornos de trabajo multiculturales.",
+      icon: "serviceTwo",
     },
     {
-      name: "Service 3",
+      name: "Apoyo Legal y Administrativo",
       description:
-        "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-      icon: ArrowPathIcon,
+        "Apoyo en los aspectos jurídicos y administrativos: La contratación internacional puede estar plagada de retos legales y administrativos. Gracias a nuestra experiencia en este ámbito, ayudamos a los empresarios a obtener los visados y permisos de trabajo necesarios y a garantizar el cumplimiento de todos los requisitos legales.",
+      icon: "serviceThree",
     },
     {
-      name: "Service 4",
+      name: "Reclutamiento Eficiente",
       description:
-        "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
-      icon: FingerPrintIcon,
+        "Procesos de contratación eficientes: Con nuestra experiencia, ayudamos a las empresas a ahorrar tiempo y recursos mediante la aplicación de procesos de contratación eficientes con TalenToGo. Desde la búsqueda y preselección de candidatos hasta la organización de entrevistas y negociaciones, TalenToGo le guiará a lo largo de todo el proceso de forma profesional y específica.",
+      icon: "serviceFour",
+    },
+    {
+      name: "Asociaciones a Largo Plazo",
+      description:
+        "Creación de asociaciones a largo plazo: Una colaboración fructífera construye asociaciones a largo plazo y una sólida base de confianza mediante la entrega constante de profesionales cualificados y la prestación de un servicio de primera clase. Con nuestro compromiso, combatimos la escasez de competencias y le ayudamos a atraer a los mejores talentos para las necesidades de su organización y a promover el éxito de su equipo.",
+      icon: "serviceFive",
     },
   ],
-}
+};
 
 export const aboutUsDE = {
   heading: "Unser Team",
@@ -131,7 +151,7 @@ export const aboutUsDE = {
       linkedinUrl: "#",
     },
   ],
-}
+};
 
 export const aboutUsES = {
   heading: "Nuestro equipo",
@@ -159,4 +179,4 @@ export const aboutUsES = {
       linkedinUrl: "#",
     },
   ],
-}
+};
