@@ -1,19 +1,19 @@
-import { Fragment, useContext, useState } from "react"
-import { Listbox, Transition } from "@headlessui/react"
-import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid"
-import { languageContext } from "../Context/Context"
+import { Fragment, useContext } from "react";
+import { Listbox, Transition } from "@headlessui/react";
+import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import { languageContext } from "../Context/Context";
 
 const languageOptions = [
   { id: 1, name: "DE" },
   { id: 2, name: "ES" },
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(" ")
+  return classes.filter(Boolean).join(" ");
 }
 
 const LanguageSelect = () => {
-  const { language, setLanguage } = useContext(languageContext)
+  const { language, setLanguage } = useContext(languageContext);
 
   return (
     <Listbox value={language} onChange={setLanguage}>
@@ -73,7 +73,7 @@ const LanguageSelect = () => {
         </>
       )}
     </Listbox>
-  )
-}
+  );
+};
 
-export default LanguageSelect
+export default LanguageSelect;
