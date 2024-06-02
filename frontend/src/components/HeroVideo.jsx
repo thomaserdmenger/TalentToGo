@@ -21,8 +21,8 @@ export default function HeroVideo({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { language } = useContext(languageContext);
   const { pathname } = useLocation();
-  const videoRef = useRef(null);
   const navigate = useNavigate();
+  const videoRef = useRef(null);
 
   useEffect(() => {
     if (videoRef.current) {
@@ -73,6 +73,26 @@ export default function HeroVideo({
     }
 
     if (pathname === "/employees" && e.target.textContent === "Sobre nosotros") {
+      setTimeout(() => {
+        navigate("/");
+        setTimeout(() => {
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
+    }
+
+    if (pathname === "/imprint" && e.target.textContent === "Über uns") {
+      setTimeout(() => {
+        navigate("/");
+        setTimeout(() => {
+          const aboutUsSection = document.querySelector("#aboutUs");
+          aboutUsSection.scrollIntoView({ behavior: "smooth" });
+        }, 20);
+      }, 50);
+    }
+
+    if (pathname === "/imprint" && e.target.textContent === "Sobre nosotros") {
       setTimeout(() => {
         navigate("/");
         setTimeout(() => {
