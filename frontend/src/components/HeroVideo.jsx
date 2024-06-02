@@ -321,12 +321,8 @@ export default function HeroVideo({
                       </a>
                     ))}
                 </div>
-                <div className="py-6 flex gap-2">
-                  {/* <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                    Log in
-                  </a> */}
+                {/* Social Media Section */}
+                {/* <div className="py-6 flex gap-2">
                   <a href="https://www.facebook.com/" target="_blank">
                     <FaSquareFacebook size={20} />
                   </a>
@@ -336,7 +332,7 @@ export default function HeroVideo({
                   <a href="#">
                     <FaSquareWhatsapp size={20} />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </Dialog.Panel>

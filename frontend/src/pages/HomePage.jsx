@@ -154,7 +154,7 @@ const HomePage = () => {
         </section>
         {/* SERVICE SECTION */}
         <section className="serviceSection">
-          <div className="bg-white py-24 sm:py-32">
+          <div className="bg-white pt-20">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               {language === "DE" && (
                 <>
