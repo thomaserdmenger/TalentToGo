@@ -1,8 +1,8 @@
 export const footerDataDE = {
   main: [
-    { name: "Home", href: "#" },
-    { name: "Für Arbeitgeber", href: "#" },
-    { name: "Für Arbeitnehmer", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "Für Arbeitgeber", href: "/employer" },
+    { name: "Für Arbeitnehmer", href: "/employees" },
     { name: "Über uns", href: "#" },
     { name: "Kontakt", href: "#" },
     { name: "Datenschutz", href: "#" },
@@ -72,14 +72,14 @@ export const footerDataDE = {
       ),
     },
   ],
-  copyright: "Talent To Go. Alle Rechte vorbehalten.",
-}
+  copyright: "TalentToGo. Alle Rechte vorbehalten.",
+};
 
 export const footerDataES = {
   main: [
-    { name: "Casa", href: "#" },
-    { name: "Para empleadores", href: "#" },
-    { name: "Para los trabajadores", href: "#" },
+    { name: "Casa", href: "/" },
+    { name: "Para empleadores", href: "/employer" },
+    { name: "Para los trabajadores", href: "/employees" },
     { name: "Sobre nosotros", href: "#" },
     { name: "Contacto", href: "#" },
     { name: "Protección de Datos", href: "#" },
@@ -149,5 +149,5 @@ export const footerDataES = {
       ),
     },
   ],
-  copyright: "Talent To Go. All rights reserved.",
-}
+  copyright: "TalentToGo. Todos los derechos reservados.",
+};
