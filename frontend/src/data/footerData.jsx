@@ -7,7 +7,7 @@ export const footerDataDE = {
     { name: "Kontakt", href: "#" },
     { name: "Datenschutz", href: "#" },
     { name: "AGB", href: "#" },
-    { name: "Impressum", href: "#" },
+    { name: "Impressum", href: "/imprint" },
   ],
   social: [
     {
@@ -84,7 +84,7 @@ export const footerDataES = {
     { name: "Contacto", href: "#" },
     { name: "Protección de Datos", href: "#" },
     { name: "CGC", href: "#" },
-    { name: "Aviso Legal", href: "#" },
+    { name: "Aviso Legal", href: "/imprint" },
   ],
   social: [
     {

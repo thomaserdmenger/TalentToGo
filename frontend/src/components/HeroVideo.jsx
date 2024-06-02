@@ -150,7 +150,8 @@ export default function HeroVideo({
                     onClick={scrollToDifferentSections}
                     key={item.name}
                     to={item.href}
-                    className="text-sm font-semibold leading-6 text-white">
+                    // className="text-sm font-semibold leading-6 text-white">
+                    className={`text-sm font-semibold leading-6 text-white`}>
                     {item.name}
                   </NavLink>
                 ) : (
@@ -189,6 +190,22 @@ export default function HeroVideo({
                     className="text-sm font-semibold leading-6 text-white">
                     {item.name}
                   </NavLink>
+                ) : (
+                    <Link
+                      onClick={scrollToDifferentSections}
+                      key={item.name}
+                      to={item.href}
+                      className="text-sm font-semibold leading-6 text-white">
+                      {item.name}
+                    </Link>
+                  ) && pathname === "/imprint" ? (
+                  <Link
+                    onClick={scrollToDifferentSections}
+                    key={item.name}
+                    to={item.href}
+                    className="text-sm font-semibold leading-6 text-black">
+                    {item.name}
+                  </Link>
                 ) : (
                   <Link
                     onClick={scrollToDifferentSections}
@@ -340,77 +357,80 @@ export default function HeroVideo({
       </header>
 
       {/* Hero Section */}
-      <div className={`min-h-screen relative isolate flex items-center justify-center`}>
-        <video
-          ref={videoRef}
-          className="w-full h-full object-cover absolute top-0 left-0"
-          src="/images/Hero_Video.mp4"
-          autoPlay
-          muted
-          loop></video>
+      {/* Hero Section */}
+      {pathname !== "/imprint" && (
+        <div className={`min-h-screen relative isolate flex items-center justify-center`}>
+          <video
+            ref={videoRef}
+            className="w-full h-full object-cover absolute top-0 left-0"
+            src="/images/Hero_Video.mp4"
+            autoPlay
+            muted
+            loop></video>
 
-        {language === "DE" && (
-          <div className="mx-auto max-w-4xl relative">
-            <div className="text-center px-6">
-              <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white lg:leading-[1.1] mb-2">
-                {pathname === "/" && homeDataHeroDE.heading}
-                {pathname === "/employer" && employerDataDE.heading}
-                {pathname === "/employees" && employeesDataDE.heading}
-              </h1>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-white  lg:leading-[1.3] max-w-2xl mx-auto">
-                {pathname === "/" && homeDataHeroDE.subheading}
-                {pathname === "/employer" && employerDataDE.subheading}
-                {pathname === "/employees" && employeesDataDE.subheading}
-              </h2>
-              {pathname === "/" && (
-                <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <Link
-                    to="/employer"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    {homeDataHeroDE.buttonEmployers}
-                  </Link>
-                  <Link
-                    to="/employees"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    {homeDataHeroDE.buttonEmployees}
-                  </Link>
-                </div>
-              )}
+          {language === "DE" && (
+            <div className="mx-auto max-w-4xl relative">
+              <div className="text-center px-6">
+                <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white lg:leading-[1.1] mb-2">
+                  {pathname === "/" && homeDataHeroDE.heading}
+                  {pathname === "/employer" && employerDataDE.heading}
+                  {pathname === "/employees" && employeesDataDE.heading}
+                </h1>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-white  lg:leading-[1.3] max-w-2xl mx-auto">
+                  {pathname === "/" && homeDataHeroDE.subheading}
+                  {pathname === "/employer" && employerDataDE.subheading}
+                  {pathname === "/employees" && employeesDataDE.subheading}
+                </h2>
+                {pathname === "/" && (
+                  <div className="mt-10 flex items-center justify-center gap-x-6">
+                    <Link
+                      to="/employer"
+                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                      {homeDataHeroDE.buttonEmployers}
+                    </Link>
+                    <Link
+                      to="/employees"
+                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                      {homeDataHeroDE.buttonEmployees}
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {language === "ES" && (
-          <div className="mx-auto max-w-4xl relative">
-            <div className="text-center px-6">
-              <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white lg:leading-[1.1] mb-2">
-                {pathname === "/" && homeDataHeroES.heading}
-                {pathname === "/employer" && employerDataES.heading}
-                {pathname === "/employees" && employeesDataES.heading}
-              </h1>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-white  lg:leading-[1.3] max-w-2xl mx-auto">
-                {pathname === "/" && homeDataHeroES.subheading}
-                {pathname === "/employer" && employerDataES.subheading}
-                {pathname === "/employees" && employeesDataES.subheading}
-              </h2>
-              {pathname === "/" && (
-                <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <Link
-                    to="/employer"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    {homeDataHeroES.buttonEmployers}
-                  </Link>
-                  <Link
-                    to="/employees"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    {homeDataHeroES.buttonEmployees}
-                  </Link>
-                </div>
-              )}
+          {language === "ES" && (
+            <div className="mx-auto max-w-4xl relative">
+              <div className="text-center px-6">
+                <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white lg:leading-[1.1] mb-2">
+                  {pathname === "/" && homeDataHeroES.heading}
+                  {pathname === "/employer" && employerDataES.heading}
+                  {pathname === "/employees" && employeesDataES.heading}
+                </h1>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-white  lg:leading-[1.3] max-w-2xl mx-auto">
+                  {pathname === "/" && homeDataHeroES.subheading}
+                  {pathname === "/employer" && employerDataES.subheading}
+                  {pathname === "/employees" && employeesDataES.subheading}
+                </h2>
+                {pathname === "/" && (
+                  <div className="mt-10 flex items-center justify-center gap-x-6">
+                    <Link
+                      to="/employer"
+                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                      {homeDataHeroES.buttonEmployers}
+                    </Link>
+                    <Link
+                      to="/employees"
+                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                      {homeDataHeroES.buttonEmployees}
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

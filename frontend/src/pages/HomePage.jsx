@@ -32,12 +32,6 @@ const HomePage = () => {
           navigationDE={navigationDE}
           navigationES={navigationES}
         />
-        {/* <Hero
-          homeDataHeroDE={homeDataHeroDE}
-          homeDataHeroES={homeDataHeroES}
-          navigationDE={navigationDE}
-          navigationES={navigationES}
-        /> */}
       </header>
       <main>
         {/* SECTION PROCESS INFORMATION */}
